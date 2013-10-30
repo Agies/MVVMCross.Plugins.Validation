@@ -5,6 +5,15 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MVVMCross.Plugins.Validatio
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MVVMCross.Plugins.Validation.Droid", "MVVMCross.Plugins.Validation.Droid\MVVMCross.Plugins.Validation.Droid.csproj", "{5ED8B5D6-7E83-48DF-8A83-BF076B7B569A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MVVMCross.Plugins.Validation.UnitTests", "MVVMCross.Plugins.Validation.UnitTests\MVVMCross.Plugins.Validation.UnitTests.csproj", "{21091569-5122-4204-98BB-30E39F3392EC}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{06857898-906E-4F67-B987-4B7D7996ED1D}"
+	ProjectSection(SolutionItems) = preProject
+		.nuget\NuGet.Config = .nuget\NuGet.Config
+		.nuget\NuGet.exe = .nuget\NuGet.exe
+		.nuget\NuGet.targets = .nuget\NuGet.targets
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -19,6 +28,10 @@ Global
 		{5ED8B5D6-7E83-48DF-8A83-BF076B7B569A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5ED8B5D6-7E83-48DF-8A83-BF076B7B569A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5ED8B5D6-7E83-48DF-8A83-BF076B7B569A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{21091569-5122-4204-98BB-30E39F3392EC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{21091569-5122-4204-98BB-30E39F3392EC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{21091569-5122-4204-98BB-30E39F3392EC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{21091569-5122-4204-98BB-30E39F3392EC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

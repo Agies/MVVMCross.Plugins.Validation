@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>AutoMoq</id>
+    <version>1.6.2.0</version>
+    <title>AutoMoq</title>
+    <authors>Darren Cauthon</authors>
+    <owners>Darren Cauthon</owners>
+    <projectUrl>https://github.com/darrencauthon/AutoMoq</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Auto-mocking container</description>
+    <releaseNotes />
+    <copyright>2011-2013 Darren Cauthon</copyright>
+    <language />
+    <tags>moq unity</tags>
+    <dependencies>
+      <dependency id="Moq" version="4.0.10827" />
+      <dependency id="Unity" version="2.0" />
+    </dependencies>
+  </metadata>
+</package>
