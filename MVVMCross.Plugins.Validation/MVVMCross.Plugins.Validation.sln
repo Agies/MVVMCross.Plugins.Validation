@@ -14,6 +14,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{068578
 		.nuget\NuGet.targets = .nuget\NuGet.targets
 	EndProjectSection
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MVVMCross.Plugins.Validation.Touch", "MVVMCross.Plugins.Validation.Touch\MVVMCross.Plugins.Validation.Touch.csproj", "{7E7F730A-0994-4475-91AD-6F85EFBFD721}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -32,6 +34,10 @@ Global
 		{21091569-5122-4204-98BB-30E39F3392EC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{21091569-5122-4204-98BB-30E39F3392EC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{21091569-5122-4204-98BB-30E39F3392EC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7E7F730A-0994-4475-91AD-6F85EFBFD721}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7E7F730A-0994-4475-91AD-6F85EFBFD721}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7E7F730A-0994-4475-91AD-6F85EFBFD721}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7E7F730A-0994-4475-91AD-6F85EFBFD721}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

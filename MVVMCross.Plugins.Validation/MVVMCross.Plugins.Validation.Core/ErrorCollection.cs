@@ -12,5 +12,10 @@ namespace MVVMCross.Plugins.Validation.Core
         }
 
         public bool IsValid { get { return !this.Any(); } }
+
+        public string Format()
+        {
+            return string.Join("\r\n", this.Select(t => t.Message));
+        }
     }
 }

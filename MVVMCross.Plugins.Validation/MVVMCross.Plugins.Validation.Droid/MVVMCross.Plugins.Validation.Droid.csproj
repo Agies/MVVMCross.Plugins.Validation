@@ -84,7 +84,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Bootstrap\MessengerPluginBootstrap.cs" />
-    <Compile Include="MvxValidationService.cs" />
+    <Compile Include="MvxAndroidToastService.cs" />
+    <Compile Include="MvxAndroidValidationService.cs" />
     <Compile Include="LinkerPleaseInclude.cs" />
     <Compile Include="Resources\Resource.Designer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

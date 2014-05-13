@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Reflection;
 
 namespace MVVMCross.Plugins.Validation.Core
 {
@@ -26,7 +27,7 @@ namespace MVVMCross.Plugins.Validation.Core
         private IValidationCollection BuildCollectionFor(Type type)
         {
             var validationCollection = new ValidationCollection();
-            var properties = type.GetProperties();
+            var properties = type.GetRuntimeProperties();
             foreach (var propertyInfo in properties)
             {
                 var attributes = propertyInfo.GetCustomAttributes(true).OfType<ValidationAttribute>().ToArray();
@@ -56,9 +57,9 @@ namespace MVVMCross.Plugins.Validation.Core
 
         private bool HasRequiredValidator(Type validationType)
         {
-            var isGenericType = validationType.IsGenericType;
+            var isGenericType = validationType.IsConstructedGenericType;
             if (isGenericType)
-                return validationType.GetGenericTypeDefinition() == typeof (RequiredValidation<>);
+                return validationType.GetGenericTypeDefinition() == typeof(RequiredValidation<>);
             return false;
         }
     }
