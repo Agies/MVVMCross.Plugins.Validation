@@ -9,7 +9,7 @@ using Cirrious.MvvmCross.Binding.BindingContext;
 using Cirrious.MvvmCross.Binding.Droid.Target;
 using Cirrious.MvvmCross.Plugins.Messenger;
 using Cirrious.MvvmCross.ViewModels;
-using MVVMCross.Plugins.Validation.Core;
+using MVVMCross.Plugins.Validation;
 
 namespace MVVMCross.Plugins.Validation.Droid
 {

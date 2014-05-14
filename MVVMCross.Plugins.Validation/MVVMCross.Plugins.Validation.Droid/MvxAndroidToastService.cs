@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using Android.Content;
 using Android.Widget;
-using MVVMCross.Plugins.Validation.Core;
+using MVVMCross.Plugins.Validation;
 
 namespace MVVMCross.Plugins.Validation.Droid
 {

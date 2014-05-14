@@ -8,7 +8,7 @@ using Cirrious.MvvmCross.Binding.Bindings.SourceSteps;
 using Cirrious.MvvmCross.Plugins.Messenger;
 using Cirrious.MvvmCross.ViewModels;
 
-namespace MVVMCross.Plugins.Validation.Core
+namespace MVVMCross.Plugins.Validation
 {
     public interface IMvxValidationService
     {

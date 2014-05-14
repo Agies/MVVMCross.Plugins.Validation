@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Reflection;
 
-namespace MVVMCross.Plugins.Validation.Core
+namespace MVVMCross.Plugins.Validation
 {
     public class Validator : IValidator
     {

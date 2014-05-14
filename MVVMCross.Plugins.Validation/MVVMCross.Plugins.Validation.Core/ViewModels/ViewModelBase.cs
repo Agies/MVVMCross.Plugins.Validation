@@ -1,7 +1,7 @@
 ﻿using Cirrious.MvvmCross.Plugins.Messenger;
 using Cirrious.MvvmCross.ViewModels;
 
-namespace MVVMCross.Plugins.Validation.Core.ViewModels
+namespace MVVMCross.Plugins.Validation.ViewModels
 {
     public class ViewModelBase : MvxViewModel
     {

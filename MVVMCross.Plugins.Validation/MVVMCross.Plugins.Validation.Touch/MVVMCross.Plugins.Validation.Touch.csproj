@@ -38,6 +38,7 @@
   <ItemGroup>
     <Compile Include="MvxTouchToastService.cs" />
     <Compile Include="MvxTouchValidationService.cs" />
+    <Compile Include="Plugin.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -71,9 +72,9 @@
     <Reference Include="monotouch" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\MVVMCross.Plugins.Validation.Core\MVVMCross.Plugins.Validation.Core.csproj">
+    <ProjectReference Include="..\MVVMCross.Plugins.Validation.Core\MVVMCross.Plugins.Validation.csproj">
       <Project>{28F5F62B-17A7-4AC9-9079-4C9EFB898E83}</Project>
-      <Name>MVVMCross.Plugins.Validation.Core</Name>
+      <Name>MVVMCross.Plugins.Validation</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.MonoTouch.CSharp.targets" />

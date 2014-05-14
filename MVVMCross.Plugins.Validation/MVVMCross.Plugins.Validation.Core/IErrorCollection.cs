@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace MVVMCross.Plugins.Validation.Core
+namespace MVVMCross.Plugins.Validation
 {
     public interface IErrorCollection : ICollection<IErrorInfo>
     {

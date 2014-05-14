@@ -1,6 +1,6 @@
 ﻿using Cirrious.MvvmCross.Plugins.Messenger;
 
-namespace MVVMCross.Plugins.Validation.Core
+namespace MVVMCross.Plugins.Validation
 {
     public class ValidationMessage : MvxMessage
     {

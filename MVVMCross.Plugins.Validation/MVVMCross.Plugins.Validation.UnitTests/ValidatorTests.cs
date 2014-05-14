@@ -1,5 +1,5 @@
 ﻿using AutoMoq;
-using MVVMCross.Plugins.Validation.Core;
+using MVVMCross.Plugins.Validation;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Moq;
 

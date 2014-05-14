@@ -1,4 +1,4 @@
-﻿namespace MVVMCross.Plugins.Validation.Core
+﻿namespace MVVMCross.Plugins.Validation
 {
     public abstract class ValidationBase<T> : IValidation<T>
     {

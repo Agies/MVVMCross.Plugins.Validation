@@ -5,7 +5,6 @@ using Cirrious.MvvmCross.Binding.Touch.Target;
 using Cirrious.MvvmCross.Plugins.Messenger;
 using MonoTouch.CoreGraphics;
 using MonoTouch.UIKit;
-using MVVMCross.Plugins.Validation.Core;
 
 namespace MVVMCross.Plugins.Validation.Touch
 {

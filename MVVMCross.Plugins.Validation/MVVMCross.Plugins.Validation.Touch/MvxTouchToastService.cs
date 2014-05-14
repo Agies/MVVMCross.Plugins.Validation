@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 using MonoTouch.UIKit;
-using MVVMCross.Plugins.Validation.Core;
+using MVVMCross.Plugins.Validation;
 
 namespace MVVMCross.Plugins.Validation.Touch
 {

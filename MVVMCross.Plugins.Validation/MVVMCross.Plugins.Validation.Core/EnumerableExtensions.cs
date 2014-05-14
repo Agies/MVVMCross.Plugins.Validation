@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
 
-namespace MVVMCross.Plugins.Validation.Core
+namespace MVVMCross.Plugins.Validation
 {
     public static class EnumerableExtensions
     {

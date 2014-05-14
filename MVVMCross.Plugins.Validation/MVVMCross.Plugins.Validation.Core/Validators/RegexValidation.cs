@@ -1,6 +1,6 @@
 ﻿using System.Text.RegularExpressions;
 
-namespace MVVMCross.Plugins.Validation.Core
+namespace MVVMCross.Plugins.Validation
 {
     public class RegexValidation : IValidation
     {

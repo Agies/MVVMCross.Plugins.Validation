@@ -87,6 +87,7 @@
     <Compile Include="MvxAndroidToastService.cs" />
     <Compile Include="MvxAndroidValidationService.cs" />
     <Compile Include="LinkerPleaseInclude.cs" />
+    <Compile Include="Plugin.cs" />
     <Compile Include="Resources\Resource.Designer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -98,9 +99,9 @@
     <AndroidResource Include="Resources\Values\Strings.xml" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\MVVMCross.Plugins.Validation.Core\MVVMCross.Plugins.Validation.Core.csproj">
+    <ProjectReference Include="..\MVVMCross.Plugins.Validation.Core\MVVMCross.Plugins.Validation.csproj">
       <Project>{28f5f62b-17a7-4ac9-9079-4c9efb898e83}</Project>
-      <Name>MVVMCross.Plugins.Validation.Core</Name>
+      <Name>MVVMCross.Plugins.Validation</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />

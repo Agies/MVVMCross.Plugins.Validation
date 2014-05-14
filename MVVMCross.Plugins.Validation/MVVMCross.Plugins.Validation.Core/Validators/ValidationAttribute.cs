@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace MVVMCross.Plugins.Validation.Core
+namespace MVVMCross.Plugins.Validation
 {
     [AttributeUsage(AttributeTargets.Class|AttributeTargets.Property, AllowMultiple = true, Inherited = true)]
     public abstract class ValidationAttribute : Attribute

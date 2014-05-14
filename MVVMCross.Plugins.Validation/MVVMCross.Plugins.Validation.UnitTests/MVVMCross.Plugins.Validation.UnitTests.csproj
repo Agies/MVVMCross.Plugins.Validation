@@ -103,9 +103,9 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\MVVMCross.Plugins.Validation.Core\MVVMCross.Plugins.Validation.Core.csproj">
+    <ProjectReference Include="..\MVVMCross.Plugins.Validation.Core\MVVMCross.Plugins.Validation.csproj">
       <Project>{28F5F62B-17A7-4AC9-9079-4C9EFB898E83}</Project>
-      <Name>MVVMCross.Plugins.Validation.Core</Name>
+      <Name>MVVMCross.Plugins.Validation</Name>
     </ProjectReference>
   </ItemGroup>
   <Choose>

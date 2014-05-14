@@ -1,7 +1,7 @@
 ﻿using System;
 using Cirrious.MvvmCross.Plugins.Messenger;
 
-namespace MVVMCross.Plugins.Validation.Core.ViewModels
+namespace MVVMCross.Plugins.Validation.ViewModels
 {
     public abstract class ValidatingViewModel : ViewModelBase
     {
