@@ -16,6 +16,11 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{068578
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MVVMCross.Plugins.Validation.Touch", "MVVMCross.Plugins.Validation.Touch\MVVMCross.Plugins.Validation.Touch.csproj", "{7E7F730A-0994-4475-91AD-6F85EFBFD721}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "nuspec", "nuspec", "{43B0FD01-0637-4949-AA21-8E35516D0160}"
+	ProjectSection(SolutionItems) = preProject
+		nuspec\MVVMCross.Plugins.Validation.1.0.0.nuspec = nuspec\MVVMCross.Plugins.Validation.1.0.0.nuspec
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
