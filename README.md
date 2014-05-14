@@ -1,5 +1,7 @@
 Validation Plug-in for MVVMCross
 -------------------------------
+Read about usage here http://agiescode.ghost.io/2014/05/10/mobile-project-one/
+
 
 - 5/12 Added iOS and Android Support
 - 5/13 Nuget support https://www.nuget.org/packages/MVVMCross.Plugins.Validation/
