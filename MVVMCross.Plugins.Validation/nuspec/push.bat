@@ -1,1 +1,1 @@
-nuget push MVVMCross.Plugins.Validation.1.0.0.nupkg
+nuget push MVVMCross.Plugins.Validation.*.*.*.nupkg
