@@ -1,10 +1,11 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 using System.Reflection;
 using Cirrious.MvvmCross.Binding.Touch.Target;
 using Cirrious.MvvmCross.Plugins.Messenger;
-using MonoTouch.CoreGraphics;
-using MonoTouch.UIKit;
+using CoreGraphics;
+using UIKit;
 
 namespace MVVMCross.Plugins.Validation.Touch
 {
@@ -12,7 +13,7 @@ namespace MVVMCross.Plugins.Validation.Touch
     {
         private Dictionary<string, List<UIView>> _sourceBindingRelationships;
         private UIView _firstText;
-        private float? _defaultWidth;
+        private nfloat? _defaultWidth;
         private CGColor _defaultColor;
 
         IMvxToastService toastService;
