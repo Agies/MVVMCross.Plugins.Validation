@@ -2,10 +2,12 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Reflection;
-using Cirrious.MvvmCross.Binding.Touch.Target;
-using Cirrious.MvvmCross.Plugins.Messenger;
 using CoreGraphics;
 using UIKit;
+using MvvmCross.Binding.iOS.Target;
+using MvvmCross.Binding.BindingContext;
+using MvvmCross.Core.ViewModels;
+using MvvmCross.Plugins.Messenger;
 
 namespace MVVMCross.Plugins.Validation.Touch
 {
@@ -39,7 +41,7 @@ namespace MVVMCross.Plugins.Validation.Touch
             this.toastService = toastService;
         }
 
-        public override void SetupForValidation(Cirrious.MvvmCross.Binding.BindingContext.IMvxBindingContext context, Cirrious.MvvmCross.ViewModels.IMvxViewModel viewModel)
+        public override void SetupForValidation(IMvxBindingContext context, IMvxViewModel viewModel)
         {
             _sourceBindingRelationships = new Dictionary<string, List<UIView>>();
             base.SetupForValidation(context, viewModel);
