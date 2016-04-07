@@ -39,8 +39,11 @@
     <Compile Include="IMvxToastService.cs" />
     <Compile Include="IMvxValidationService.cs" />
     <Compile Include="PluginLoader.cs" />
+    <Compile Include="Validators\RangeAttribute.cs" />
     <Compile Include="Validators\RegexAttribute.cs" />
     <Compile Include="Validators\RegexValidation.cs" />
+    <Compile Include="Validators\RangeValidation.cs" />
+    <Compile Include="Validators\StringLengthValidation.cs" />
     <Compile Include="Validators\ShouldBeLongAttribute.cs" />
     <Compile Include="Validators\ShouldBeLongValidation.cs" />
     <Compile Include="StringExtensions.cs" />
@@ -56,9 +59,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Validators\RequiredAttribute.cs" />
     <Compile Include="Validators\RequiredValidation.cs" />
+    <Compile Include="Validators\StringLengthAttribute.cs" />
     <Compile Include="ViewModels\ValidatingViewModel.cs" />
     <Compile Include="Validators\ValidationAttribute.cs" />
-    <Compile Include="Validators\ValidationBase.cs" />
     <Compile Include="ValidationCollection.cs" />
     <Compile Include="ValidationInfo.cs" />
     <Compile Include="Validator.cs" />

@@ -2,14 +2,18 @@
 
 namespace MVVMCross.Plugins.Validation
 {
-    public class RequiredValidation<T> : IValidation<T>
+    public class RangeValidation<T> : IValidation<T>
     {
         private readonly Func<T, bool> _predicate;
         private string _message;
+        private object _maximum;
+        private object _minimum;
 
-        public RequiredValidation(Func<T, bool> predicate, string message)
+        public RangeValidation(Func<T, bool> predicate, object minimum, object maximum, string message)
         {
             _predicate = predicate;
+            _minimum = minimum;
+            _maximum = maximum;
             _message = message;
         }
 
@@ -22,7 +26,10 @@ namespace MVVMCross.Plugins.Validation
         {
             if (!_predicate(value))
             {
-                return new ErrorInfo(propertyName, _message == null ? string.Format("{0} is Required", propertyName) : string.Format(_message, propertyName));
+                return new ErrorInfo(propertyName, _message == null ? 
+                    string.Format("The Range of {0} must between {1} and {2}", propertyName, _minimum, _maximum) : 
+                    string.Format(_message, propertyName, _minimum, _maximum)
+                    );
             }
             return null;
         }

@@ -19,7 +19,10 @@ namespace MVVMCross.Plugins.Validation
 
             var stringValue = value.ToString();
             if (!_regex.IsMatch(stringValue))
-                return new ErrorInfo(propertyName, string.Format(_message, propertyName));
+                return new ErrorInfo(propertyName, _message == null ? 
+                    string.Format("The value of {0} is incorrect", propertyName) :
+                    string.Format(_message, propertyName)
+                    );
             return null;
         }
     }
