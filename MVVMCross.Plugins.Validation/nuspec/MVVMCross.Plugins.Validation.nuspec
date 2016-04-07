@@ -12,10 +12,10 @@
         <description>Gives MVVMCross multiplatform validation support using existing bindings and attributes.</description>
         <tags>mvvm mvvmcross xamarin monodroid monotouch</tags>
         <dependencies>
-            <dependency id="MvvmCross.HotTuna.CrossCore" version="3.0.13" />
-            <dependency id="MvvmCross.HotTuna.Plugin.Messenger" version="3.0.13" />
-            <dependency id="MvvmCross" version="3.1.1" />
-            <dependency id="MvvmCross.HotTuna.MvvmCrossLibraries" version="3.1.1" />
+            <dependency id="MvvmCross.Core" version="4.0.0" />
+            <dependency id="MvvmCross.Plugin.Messenger" version="4.0.0" />
+            <dependency id="MvvmCross" version="4.0.0" />
+            <dependency id="MvvmCross.Platform" version="4.0.0" />
         </dependencies>
     </metadata>
     <files>
