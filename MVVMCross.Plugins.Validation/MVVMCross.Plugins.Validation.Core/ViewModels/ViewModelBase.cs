@@ -1,5 +1,5 @@
-﻿using Cirrious.MvvmCross.Plugins.Messenger;
-using Cirrious.MvvmCross.ViewModels;
+﻿using MvvmCross.Core.ViewModels;
+using MvvmCross.Plugins.Messenger;
 
 namespace MVVMCross.Plugins.Validation.ViewModels
 {

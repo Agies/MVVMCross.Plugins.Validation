@@ -2,20 +2,27 @@
 
 namespace MVVMCross.Plugins.Validation
 {
-    public class RequiredValidation<T> : ValidationBase<T>
+    public class RequiredValidation<T> : IValidation<T>
     {
         private readonly Func<T, bool> _predicate;
+        private string _message;
 
-        public RequiredValidation(Func<T, bool> predicate, string message) : base(message ?? "is Required")
+        public RequiredValidation(Func<T, bool> predicate, string message)
         {
             _predicate = predicate;
+            _message = message;
         }
 
-        public override IErrorInfo Validate(string propertyName, T value, object subject)
+        public IErrorInfo Validate(string propertyName, object value, object subject)
+        {
+            return Validate(propertyName, (T)value, subject);
+        }
+
+        public IErrorInfo Validate(string propertyName, T value, object subject)
         {
             if (!_predicate(value))
             {
-                return new ErrorInfo(propertyName, FormatMessage(propertyName));
+                return new ErrorInfo(propertyName, _message == null ? string.Format("{0} is Required", propertyName) : string.Format(_message, propertyName));
             }
             return null;
         }

@@ -1,12 +1,12 @@
-﻿using System.Collections.Generic;
+﻿using MvvmCross.Binding.BindingContext;
+using MvvmCross.Binding.Bindings;
+using MvvmCross.Binding.Bindings.SourceSteps;
+using MvvmCross.Core.ViewModels;
+using MvvmCross.Platform.Platform;
+using MvvmCross.Plugins.Messenger;
+using System.Collections.Generic;
 using System.Linq;
 using System.Reflection;
-using Cirrious.CrossCore.Platform;
-using Cirrious.MvvmCross.Binding.BindingContext;
-using Cirrious.MvvmCross.Binding.Bindings;
-using Cirrious.MvvmCross.Binding.Bindings.SourceSteps;
-using Cirrious.MvvmCross.Plugins.Messenger;
-using Cirrious.MvvmCross.ViewModels;
 
 namespace MVVMCross.Plugins.Validation
 {

@@ -1,6 +1,5 @@
-﻿using Cirrious.CrossCore;
-using Cirrious.CrossCore.Plugins;
-using MVVMCross.Plugins.Validation;
+﻿using MvvmCross.Platform;
+using MvvmCross.Platform.Plugins;
 
 namespace MVVMCross.Plugins.Validation.Droid
 {

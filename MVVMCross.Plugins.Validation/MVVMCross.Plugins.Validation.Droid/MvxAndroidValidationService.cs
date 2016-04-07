@@ -4,12 +4,11 @@ using System.Linq;
 using System.Reflection;
 using Android.Text;
 using Android.Widget;
-using Cirrious.CrossCore.Platform;
-using Cirrious.MvvmCross.Binding.BindingContext;
-using Cirrious.MvvmCross.Binding.Droid.Target;
-using Cirrious.MvvmCross.Plugins.Messenger;
-using Cirrious.MvvmCross.ViewModels;
-using MVVMCross.Plugins.Validation;
+using MvvmCross.Platform.Platform;
+using MvvmCross.Binding.Droid.Target;
+using MvvmCross.Plugins.Messenger;
+using MvvmCross.Binding.BindingContext;
+using MvvmCross.Core.ViewModels;
 
 namespace MVVMCross.Plugins.Validation.Droid
 {
