@@ -2,6 +2,7 @@
 using MVVMCross.Plugins.Validation;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Moq;
+using MvvmCross.FieldBinding;
 
 namespace MVVMCross.Plugins.Validation.UnitTests
 {
@@ -114,6 +115,44 @@ namespace MVVMCross.Plugins.Validation.UnitTests
                 TestGroup = "foo"
             }, "Test").IsValid);
         }
+
+        [TestMethod]
+        public void Validation_should_all_fail()
+        {
+            var val0 = CUT.Validate(new TestViewModel
+            {
+                NotNull = "",
+                NotZero = 0,
+                TestGroup = "",
+                TestNCRequired = new NC<string>(""),
+                TestStringLength = "123456",
+                TestNCFieldStringLength = new NC<string>("123456"),
+                TestShouldBeLong = "t",
+                TestNCFieldShouldBeLong = new NC<string>("t"),
+                TestRange = 1,
+                TestNCFieldRange = new NC<int>(1),
+                TestRegex = "1",
+                TestNCFieldRegex = new NC<string>("1")
+            }, "Test");
+            Assert.IsFalse(val0.Count == 12);
+
+            var val1 = CUT.Validate(new TestViewModel
+            {
+                NotNull = "dsf",
+                NotZero = 1,
+                TestGroup = "d",
+                TestNCRequired = new NC<string>("df"),
+                TestStringLength = "12345",
+                TestNCFieldStringLength = new NC<string>("12345"),
+                TestShouldBeLong = "12",
+                TestNCFieldShouldBeLong = new NC<string>("12"),
+                TestRange = 3,
+                TestNCFieldRange = new NC<int>(3),
+                TestRegex = "1",
+                TestNCFieldRegex = new NC<string>("1")
+            }, "Test");
+            Assert.IsFalse(val1.IsValid);
+        }
     }
 
     [TestClass]
@@ -150,5 +189,32 @@ namespace MVVMCross.Plugins.Validation.UnitTests
 
         [Required(Groups = new[] { "Test" })]
         public string TestGroup { get; set; }
+
+        [NCFieldRequired]
+        public INC<string> TestNCRequired { get; set; }
+
+        [StringLength(5)]
+        public string TestStringLength { get; set; }
+
+        [NCFieldStringLength(5)]
+        public INC<string> TestNCFieldStringLength { get; set; }
+
+        [ShouldBeLong]
+        public string TestShouldBeLong { get; set; }
+
+        [NCFieldShouldBeLong]
+        public INC<string> TestNCFieldShouldBeLong { get; set; }
+
+        [Range(2, 5)]
+        public int TestRange { get; set; }
+
+        [NCFieldRange(2, 5)]
+        public INC<int> TestNCFieldRange { get; set; }
+
+        [Regex("2", "{0} is wrong")]
+        public string TestRegex { get; set; }
+
+        [NCFieldRegex("2", "{0} is wrong")]
+        public INC<string> TestNCFieldRegex { get; set; }
     }
 }

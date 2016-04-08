@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace MVVMCross.Plugins.Validation.Validators
+namespace MVVMCross.Plugins.Validation
 {
     public class RangeAttribute : ValidationAttribute
     {

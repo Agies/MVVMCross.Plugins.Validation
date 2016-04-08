@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace MVVMCross.Plugins.Validation.Validators
+namespace MVVMCross.Plugins.Validation
 {
     public class StringLengthAttribute : ValidationAttribute
     {
