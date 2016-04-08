@@ -18,7 +18,7 @@ namespace MVVMCross.Plugins.Validation
 
             var genericityType = valueType.GenericTypeArguments[0];
             if (genericityType == null || genericityType == typeof(string))
-                return new RequiredValidation<INC<string>>(v => v == null || v.Value.IsNotNullOrEmpty(), Message);
+                return new NCFieldRequiredValidation<INC<string>>(v => v == null || v.Value.IsNotNullOrEmpty(), Message);
 
             if (!genericityType.IsByRef)
             {
@@ -30,10 +30,10 @@ namespace MVVMCross.Plugins.Validation
                         parameterExpresssion,
                         Expression.Constant(Activator.CreateInstance(genericityType))),
                     parameterExpresssion).Compile();
-                return (IValidation)Activator.CreateInstance(typeof(RequiredValidation<>).MakeGenericType(new[] { genericityType }), function, Message);
+                return (IValidation)Activator.CreateInstance(typeof(NCFieldRequiredValidation<>).MakeGenericType(new[] { genericityType }), function, Message);
             }
             if (genericityType.IsByRef)
-                return new RequiredValidation<object>(o => o != null, Message);
+                return new NCFieldRequiredValidation<object>(o => o != null, Message);
             throw new NotSupportedException("Required Validator for type " + genericityType.Name + " is not supported.");
         }
     }

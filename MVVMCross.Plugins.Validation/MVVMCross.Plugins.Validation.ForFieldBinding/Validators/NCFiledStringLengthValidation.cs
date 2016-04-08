@@ -1,15 +1,16 @@
-﻿using System;
+﻿using MvvmCross.FieldBinding;
+using System;
 
 namespace MVVMCross.Plugins.Validation
 {
-    public class StringLengthValidation : IValidation
+    public class NCFieldStringLengthValidation : IValidation
     {
-        private readonly Func<string, bool> _predicate;
+        private readonly Func<INC<string>, bool> _predicate;
         private string _message;
         private int _maximumLength;
         private int _minimumLength;
 
-        public StringLengthValidation(Func<string, bool> predicate, int minimumLength, int maximumLength, string message)
+        public NCFieldStringLengthValidation(Func<INC<string>, bool> predicate, int minimumLength, int maximumLength, string message)
         {
             _predicate = predicate;
             _maximumLength = maximumLength;
@@ -19,10 +20,10 @@ namespace MVVMCross.Plugins.Validation
 
         public IErrorInfo Validate(string propertyName, object value, object subject)
         {
-            return Validate(propertyName, value.ToString(), subject);
+            return Validate(propertyName, value as INC<string>, subject);
         }
 
-        public IErrorInfo Validate(string propertyName, string value, object subject)
+        public IErrorInfo Validate(string propertyName, INC<string> value, object subject)
         {
             if (!_predicate(value))
             {

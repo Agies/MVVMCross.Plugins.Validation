@@ -40,6 +40,11 @@
     <Compile Include="Validators\NCFieldRequiredAttribute.cs" />
     <Compile Include="Validators\NCFieldShouldBeLongAttribute.cs" />
     <Compile Include="Validators\NCFieldStringLengthAttribute.cs" />
+    <Compile Include="Validators\NCFieldRangeValidation.cs" />
+    <Compile Include="Validators\NCFieldRegexValidation.cs" />
+    <Compile Include="Validators\NCFieldRequiredValidation.cs" />
+    <Compile Include="Validators\NCFieldShouldBeLongValidation.cs" />
+    <Compile Include="Validators\NCFiledStringLengthValidation.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="MvvmCross.Binding, Version=4.0.0.0, Culture=neutral, processorArchitecture=MSIL">

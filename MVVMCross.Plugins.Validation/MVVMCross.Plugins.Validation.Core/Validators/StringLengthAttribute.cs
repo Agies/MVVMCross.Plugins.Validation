@@ -21,7 +21,7 @@ namespace MVVMCross.Plugins.Validation
             if (valueType != typeof(string))
                 throw new NotSupportedException("StringLength Validator for type " + valueType.Name + " is not supported.");
 
-            return new StringLengthValidation<string>(str =>
+            return new StringLengthValidation(str =>
             {
                 if (str.IsNullOrEmpty())
                     return true;

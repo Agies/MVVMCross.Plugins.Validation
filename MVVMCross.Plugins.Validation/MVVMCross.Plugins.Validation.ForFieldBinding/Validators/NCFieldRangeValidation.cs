@@ -1,15 +1,18 @@
-﻿using System;
+﻿using MvvmCross.FieldBinding;
+using System;
+using System.Linq;
+using System.Reflection;
 
 namespace MVVMCross.Plugins.Validation
 {
-    public class RangeValidation : IValidation
+    public class NCFieldRangeValidation : IValidation
     {
-        private readonly Func<decimal, bool> _predicate;
+        private readonly Func<INC<decimal>, bool> _predicate;
         private string _message;
         private object _maximum;
         private object _minimum;
 
-        public RangeValidation(Func<decimal, bool> predicate, object minimum, object maximum, string message)
+        public NCFieldRangeValidation(Func<INC<decimal>, bool> predicate, object minimum, object maximum, string message)
         {
             _predicate = predicate;
             _minimum = minimum;
@@ -19,10 +22,11 @@ namespace MVVMCross.Plugins.Validation
 
         public IErrorInfo Validate(string propertyName, object value, object subject)
         {
-            return Validate(propertyName, decimal.Parse(value.ToString()), subject);
+            var incValue = value.GetType().GetRuntimeProperties().FirstOrDefault(x => x.Name == "Value").GetValue(value);
+            return Validate(propertyName, new NC<decimal>(decimal.Parse(incValue.ToString())), subject);
         }
 
-        public IErrorInfo Validate(string propertyName, decimal value, object subject)
+        public IErrorInfo Validate(string propertyName, INC<decimal> value, object subject)
         {
             if (!_predicate(value))
             {

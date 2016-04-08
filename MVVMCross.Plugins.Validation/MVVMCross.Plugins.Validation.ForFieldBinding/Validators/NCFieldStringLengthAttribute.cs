@@ -26,7 +26,7 @@ namespace MVVMCross.Plugins.Validation
             if (genericityType != typeof(string))
                 throw new NotSupportedException("NCFieldStringLength Validator for type INC<" + genericityType.Name + "> is not supported.");
 
-            return new StringLengthValidation<INC<string>>(str =>
+            return new NCFieldStringLengthValidation(str =>
             {
                 if (str == null || str.Value.IsNullOrEmpty())
                     return true;

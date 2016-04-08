@@ -54,7 +54,7 @@ namespace MVVMCross.Plugins.Validation
             if (!allowTypes.Contains(genericityType))
                 throw new NotSupportedException("RangeAttribute Validator for type INC<" + genericityType.Name + "> is not supported.");
 
-            return new RangeValidation<INC<decimal>>(num => num.Value >= decimal.Parse(Minimum.ToString()) && num.Value <= decimal.Parse(Maximum.ToString()), 
+            return new NCFieldRangeValidation(num => num.Value >= decimal.Parse(Minimum.ToString()) && num.Value <= decimal.Parse(Maximum.ToString()), 
                 Minimum, Maximum, Message);
         }
     }

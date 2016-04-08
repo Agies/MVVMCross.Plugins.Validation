@@ -14,7 +14,7 @@ namespace MVVMCross.Plugins.Validation
 
         public override IValidation CreateValidation(Type valueType)
         {
-            return new RegexValidation(_regex, Message);
+            return new NCFieldRegexValidation(_regex, Message);
         }
     }
 }

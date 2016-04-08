@@ -51,7 +51,7 @@ namespace MVVMCross.Plugins.Validation
             if (!allowTypes.Contains(valueType))
                 throw new NotSupportedException("RangeAttribute Validator for type " + valueType.Name + " is not supported.");
 
-            return new RangeValidation<decimal>(num => num >= decimal.Parse(Minimum.ToString()) && num <= decimal.Parse(Maximum.ToString()), 
+            return new RangeValidation(num => num >= decimal.Parse(Minimum.ToString()) && num <= decimal.Parse(Maximum.ToString()), 
                 Minimum, Maximum, Message);
         }
     }

@@ -1,5 +1,4 @@
 ﻿using AutoMoq;
-using MVVMCross.Plugins.Validation;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Moq;
 using MvvmCross.FieldBinding;
@@ -134,7 +133,7 @@ namespace MVVMCross.Plugins.Validation.UnitTests
                 TestRegex = "1",
                 TestNCFieldRegex = new NC<string>("1")
             }, "Test");
-            Assert.IsFalse(val0.Count == 12);
+            Assert.IsTrue(val0.Count == 12);
 
             var val1 = CUT.Validate(new TestViewModel
             {
@@ -148,10 +147,10 @@ namespace MVVMCross.Plugins.Validation.UnitTests
                 TestNCFieldShouldBeLong = new NC<string>("12"),
                 TestRange = 3,
                 TestNCFieldRange = new NC<int>(3),
-                TestRegex = "1",
-                TestNCFieldRegex = new NC<string>("1")
+                TestRegex = "18700000000",
+                TestNCFieldRegex = new NC<string>("18700000000")
             }, "Test");
-            Assert.IsFalse(val1.IsValid);
+            Assert.IsTrue(val1.IsValid);
         }
     }
 
@@ -211,10 +210,10 @@ namespace MVVMCross.Plugins.Validation.UnitTests
         [NCFieldRange(2, 5)]
         public INC<int> TestNCFieldRange { get; set; }
 
-        [Regex("2", "{0} is wrong")]
+        [Regex(@"^1\d{10}$", "{0} is wrong")]
         public string TestRegex { get; set; }
 
-        [NCFieldRegex("2", "{0} is wrong")]
+        [NCFieldRegex(@"^1\d{10}$", "{0} is wrong")]
         public INC<string> TestNCFieldRegex { get; set; }
     }
 }

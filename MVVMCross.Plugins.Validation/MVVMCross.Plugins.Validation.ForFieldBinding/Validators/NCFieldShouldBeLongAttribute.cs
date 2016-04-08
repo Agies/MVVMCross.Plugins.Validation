@@ -11,7 +11,7 @@ namespace MVVMCross.Plugins.Validation
 
         public override IValidation CreateValidation(Type valueType)
         {
-            return new ShouldBeLongValidation(Message);
+            return new NCFieldShouldBeLongValidation(Message);
         }
     }
 }
