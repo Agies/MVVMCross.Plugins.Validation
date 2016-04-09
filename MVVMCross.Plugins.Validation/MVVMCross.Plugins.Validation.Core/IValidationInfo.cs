@@ -4,7 +4,7 @@ namespace MVVMCross.Plugins.Validation
 {
     public interface IValidationInfo
     {
-        PropertyInfo Property { get; }
+        MemberInfo Member { get; }
         IValidation Validation { get; }
         string[] Groups { get; }
     }

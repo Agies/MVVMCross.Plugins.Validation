@@ -1,8 +1,8 @@
 using System;
 
-namespace MVVMCross.Plugins.Validation
+namespace MVVMCross.Plugins.Validation.ForFieldBinding
 {
-    public class NCFieldRegexAttribute : ValidationAttribute
+    public class NCFieldRegexAttribute : NCFieldValidationAttribute
     {
         private readonly string _regex;
 

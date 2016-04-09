@@ -1,7 +1,7 @@
 ﻿using MvvmCross.FieldBinding;
 using System;
 
-namespace MVVMCross.Plugins.Validation
+namespace MVVMCross.Plugins.Validation.ForFieldBinding
 {
     public class NCFieldStringLengthValidation : IValidation
     {
@@ -18,18 +18,18 @@ namespace MVVMCross.Plugins.Validation
             _message = message;
         }
 
-        public IErrorInfo Validate(string propertyName, object value, object subject)
+        public IErrorInfo Validate(string fieldName, object value, object subject)
         {
-            return Validate(propertyName, value as INC<string>, subject);
+            return Validate(fieldName, value as INC<string>, subject);
         }
 
-        public IErrorInfo Validate(string propertyName, INC<string> value, object subject)
+        public IErrorInfo Validate(string fieldName, INC<string> value, object subject)
         {
             if (!_predicate(value))
             {
-                return new ErrorInfo(propertyName, _message == null ? 
-                    string.Format("The Length of {0} must between {1} and {2}", propertyName, _minimumLength, _maximumLength) : 
-                    string.Format(_message, propertyName, _minimumLength, _maximumLength)
+                return new ErrorInfo(fieldName, _message == null ? 
+                    string.Format("The Length of {0} must between {1} and {2}", fieldName, _minimumLength, _maximumLength) : 
+                    string.Format(_message, fieldName, _minimumLength, _maximumLength)
                     );
             }
             return null;

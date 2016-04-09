@@ -5,9 +5,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace MVVMCross.Plugins.Validation
+namespace MVVMCross.Plugins.Validation.ForFieldBinding
 {
-    public class NCFieldRangeAttribute : ValidationAttribute
+    public class NCFieldRangeAttribute : NCFieldValidationAttribute
     {
         private NCFieldRangeAttribute(string message = null) 
             : base(message)

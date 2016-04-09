@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace MVVMCross.Plugins.Validation
+namespace MVVMCross.Plugins.Validation.ForFieldBinding
 {
     public class NCFieldRequiredValidation<T> : IValidation<T>
     {
@@ -13,16 +13,16 @@ namespace MVVMCross.Plugins.Validation
             _message = message;
         }
 
-        public IErrorInfo Validate(string propertyName, object value, object subject)
+        public IErrorInfo Validate(string fieldName, object value, object subject)
         {
-            return Validate(propertyName, (T)value, subject);
+            return Validate(fieldName, (T)value, subject);
         }
 
-        public IErrorInfo Validate(string propertyName, T value, object subject)
+        public IErrorInfo Validate(string fieldName, T value, object subject)
         {
             if (!_predicate(value))
             {
-                return new ErrorInfo(propertyName, _message == null ? string.Format("{0} is Required", propertyName) : string.Format(_message, propertyName));
+                return new ErrorInfo(fieldName, _message == null ? string.Format("{0} is Required", fieldName) : string.Format(_message, fieldName));
             }
             return null;
         }

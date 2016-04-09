@@ -1,9 +1,9 @@
 ﻿using MvvmCross.FieldBinding;
 using System;
 
-namespace MVVMCross.Plugins.Validation
+namespace MVVMCross.Plugins.Validation.ForFieldBinding
 {
-    public class NCFieldStringLengthAttribute : ValidationAttribute
+    public class NCFieldStringLengthAttribute : NCFieldValidationAttribute
     {
         private NCFieldStringLengthAttribute(string message = null) : base(message) { }
 

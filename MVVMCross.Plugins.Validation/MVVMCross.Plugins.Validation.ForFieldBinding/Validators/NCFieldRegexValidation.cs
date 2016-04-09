@@ -2,7 +2,7 @@
 using System.Linq;
 using System.Reflection;
 
-namespace MVVMCross.Plugins.Validation
+namespace MVVMCross.Plugins.Validation.ForFieldBinding
 {
     public class NCFieldRegexValidation : IValidation
     {
@@ -15,7 +15,7 @@ namespace MVVMCross.Plugins.Validation
             _regex = new Regex(regex);
         }
 
-        public IErrorInfo Validate(string propertyName, object value, object subject)
+        public IErrorInfo Validate(string fieldName, object value, object subject)
         {
             if (value == null)
                 return null;
@@ -26,9 +26,9 @@ namespace MVVMCross.Plugins.Validation
 
             var stringValue = incValue.ToString();
             if (!_regex.IsMatch(stringValue))
-                return new ErrorInfo(propertyName, _message == null ? 
-                    string.Format("The value of {0} is incorrect", propertyName) :
-                    string.Format(_message, propertyName)
+                return new ErrorInfo(fieldName, _message == null ? 
+                    string.Format("The value of {0} is incorrect", fieldName) :
+                    string.Format(_message, fieldName)
                     );
             return null;
         }

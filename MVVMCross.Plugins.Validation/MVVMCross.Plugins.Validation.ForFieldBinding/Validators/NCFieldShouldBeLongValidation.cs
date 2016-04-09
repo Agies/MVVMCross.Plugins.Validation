@@ -1,7 +1,7 @@
 using System.Linq;
 using System.Reflection;
 
-namespace MVVMCross.Plugins.Validation
+namespace MVVMCross.Plugins.Validation.ForFieldBinding
 {
     public class NCFieldShouldBeLongValidation : IValidation
     {
@@ -12,7 +12,7 @@ namespace MVVMCross.Plugins.Validation
             _message = message;
         }
 
-        public IErrorInfo Validate(string propertyName, object value, object subject)
+        public IErrorInfo Validate(string fieldName, object value, object subject)
         {
             if (value == null)
                 return null;
@@ -22,7 +22,7 @@ namespace MVVMCross.Plugins.Validation
             if (incValue == null || long.TryParse(incValue.ToString(), out result))
                 return null;
 
-            return new ErrorInfo(propertyName, _message ?? string.Format("{0} should be a valid number.", propertyName));
+            return new ErrorInfo(fieldName, _message ?? string.Format("{0} should be a valid number.", fieldName));
         }
     }
 }

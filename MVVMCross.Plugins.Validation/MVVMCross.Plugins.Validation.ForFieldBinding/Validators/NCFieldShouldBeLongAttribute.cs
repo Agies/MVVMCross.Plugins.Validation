@@ -1,8 +1,8 @@
 using System;
 
-namespace MVVMCross.Plugins.Validation
+namespace MVVMCross.Plugins.Validation.ForFieldBinding
 {
-    public class NCFieldShouldBeLongAttribute : ValidationAttribute
+    public class NCFieldShouldBeLongAttribute : NCFieldValidationAttribute
     {
         public NCFieldShouldBeLongAttribute(string message = null)
             : base(message)
