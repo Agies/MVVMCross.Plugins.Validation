@@ -57,7 +57,7 @@ namespace MVVMCross.Plugins.Validation.Touch
         protected override void Validate(IErrorInfo errorInfo)
         {
             List<UIView> texts;
-            if (_sourceBindingRelationships.TryGetValue(errorInfo.PropertyName, out texts))
+            if (_sourceBindingRelationships.TryGetValue(errorInfo.MemberName, out texts))
             {
                 foreach (var editText in texts)
                 {

@@ -44,8 +44,8 @@
     <Compile Include="Validators\NCFieldRegexValidation.cs" />
     <Compile Include="Validators\NCFieldRequiredValidation.cs" />
     <Compile Include="Validators\NCFieldShouldBeLongValidation.cs" />
-    <Compile Include="Validators\NCFiledStringLengthValidation.cs" />
-    <Compile Include="Validators\ValidationAttribute.cs" />
+    <Compile Include="Validators\NCFieldStringLengthValidation.cs" />
+    <Compile Include="Validators\NCFieldValidationAttribute.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="MvvmCross.Binding, Version=4.0.0.0, Culture=neutral, processorArchitecture=MSIL">
