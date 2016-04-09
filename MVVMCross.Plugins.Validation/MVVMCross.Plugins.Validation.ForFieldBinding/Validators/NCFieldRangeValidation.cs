@@ -22,6 +22,9 @@ namespace MVVMCross.Plugins.Validation
 
         public IErrorInfo Validate(string propertyName, object value, object subject)
         {
+            if (value == null)
+                return null;
+
             var incValue = value.GetType().GetRuntimeProperties().FirstOrDefault(x => x.Name == "Value").GetValue(value);
             return Validate(propertyName, new NC<decimal>(decimal.Parse(incValue.ToString())), subject);
         }

@@ -116,7 +116,7 @@ namespace MVVMCross.Plugins.Validation.UnitTests
         }
 
         [TestMethod]
-        public void Validation_should_all_fail()
+        public void Validation_should_all_fail_or_true()
         {
             var val0 = CUT.Validate(new TestViewModel
             {
@@ -134,6 +134,23 @@ namespace MVVMCross.Plugins.Validation.UnitTests
                 TestNCFieldRegex = new NC<string>("1")
             }, "Test");
             Assert.IsTrue(val0.Count == 12);
+
+            var val2 = CUT.Validate(new TestViewModel
+            {
+                NotNull = null,
+                NotZero = 0,
+                TestGroup = null,
+                TestNCRequired = new NC<string>(),
+                TestStringLength = null,
+                TestNCFieldStringLength = new NC<string>(),
+                TestShouldBeLong = null,
+                TestNCFieldShouldBeLong = new NC<string>(null),
+                TestRange = 1,
+                TestNCFieldRange = new NC<int>(),
+                TestRegex = null,
+                TestNCFieldRegex = new NC<string>()
+            }, "Test");
+            Assert.IsTrue(val2.Count == 6);
 
             var val1 = CUT.Validate(new TestViewModel
             {

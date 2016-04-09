@@ -19,6 +19,7 @@ namespace MVVMCross.Plugins.Validation
         {
             if (value == null)
                 return null;
+
             var incValue = value.GetType().GetRuntimeProperties().FirstOrDefault(x => x.Name == "Value").GetValue(value);
             if (incValue == null)
                 return null;

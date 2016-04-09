@@ -2,9 +2,9 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
     <metadata>
         <id>MVVMCross.Plugins.Validation</id>
-        <version>1.1.0</version>
+        <version>2.0.0</version>
         <title>MVVMCross - Validation Plugin</title>
-        <authors>Agies</authors>
+        <authors>Agies, ZhangZihe</authors>
         <owners>Jerel R Hass</owners>
         <licenseUrl>http://opensource.org/licenses/ms-pl.html</licenseUrl>
         <projectUrl>https://github.com/Agies/MVVMCross.Plugins.Validation</projectUrl>
@@ -21,10 +21,10 @@
     <files>
         <file src="content\MonoAndroid\Bootstrap\ValidationPluginBootstrap.cs.pp" target="content\MonoAndroid\Bootstrap\ValidationPluginBootstrap.cs.pp" />
         <file src="content\MonoTouch\Bootstrap\ValidationPluginBootstrap.cs.pp" target="content\MonoTouch\Bootstrap\ValidationPluginBootstrap.cs.pp" />
-        <file src="lib\MonoAndroid\MVVMCross.Plugins.Validation.dll" target="lib\MonoAndroid\MVVMCross.Plugins.Validation.dll" />
-        <file src="lib\MonoAndroid\MVVMCross.Plugins.Validation.Droid.dll" target="lib\MonoAndroid\MVVMCross.Plugins.Validation.Droid.dll" />
-        <file src="lib\MonoTouch\MVVMCross.Plugins.Validation.dll" target="lib\MonoTouch\MVVMCross.Plugins.Validation.dll" />
-        <file src="lib\MonoTouch\MVVMCross.Plugins.Validation.Touch.dll" target="lib\MonoTouch\MVVMCross.Plugins.Validation.Touch.dll" />
-        <file src="lib\portable-win+net45+sl50+wp8+MonoAndroid+MonoTouch\MVVMCross.Plugins.Validation.dll" target="lib\portable-win+net45+sl50+wp8+MonoAndroid+MonoTouch\MVVMCross.Plugins.Validation.dll" />
+        <file src="..\MVVMCross.Plugins.Validation.Droid\bin\Debug\MVVMCross.Plugins.Validation.dll" target="lib\MonoAndroid\MVVMCross.Plugins.Validation.dll" />
+        <file src="..\MVVMCross.Plugins.Validation.Droid\bin\Debug\MVVMCross.Plugins.Validation.Droid.dll" target="lib\MonoAndroid\MVVMCross.Plugins.Validation.Droid.dll" />
+        <file src="..\MVVMCross.Plugins.Validation.Touch\bin\iPhone\Debug\MVVMCross.Plugins.Validation.dll" target="lib\MonoTouch\MVVMCross.Plugins.Validation.dll" />
+        <file src="..\MVVMCross.Plugins.Validation.Touch\bin\iPHone\Debug\MVVMCross.Plugins.Validation.Touch.dll" target="lib\MonoTouch\MVVMCross.Plugins.Validation.Touch.dll" />
+        <file src="..\MVVMCross.Plugins.Validation.Core\bin\Debug\MVVMCross.Plugins.Validation.dll" target="lib\portable-win+net45+sl50+wp8+MonoAndroid+MonoTouch\MVVMCross.Plugins.Validation.dll" />
     </files>
 </package>
