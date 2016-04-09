@@ -12,8 +12,8 @@
         <description>Gives MVVMCross multiplatform validation support using existing bindings and attributes.</description>
         <tags>mvvm mvvmcross xamarin monodroid monotouch</tags>
         <dependencies>
-			<dependency id="MvvmCross.Plugin.FieldBinding.dll" version="4.0.0" />
-            <dependency id="MVVMCross.Plugins.Validation.dll" version="2.0.0" />
+			<dependency id="MvvmCross.Plugin.FieldBinding" version="4.0.0" />
+            <dependency id="MVVMCross.Plugins.Validation" version="2.0.0" />
         </dependencies>
     </metadata>
     <files>
