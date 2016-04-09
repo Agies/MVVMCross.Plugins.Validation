@@ -5,6 +5,7 @@ Read about usage here http://agiescode.ghost.io/2014/05/10/mobile-project-one/
 
 - 5/12 Added iOS and Android Support
 - 5/13 Nuget support https://www.nuget.org/packages/MVVMCross.Plugins.Validation/
+- 2016/4/9 Added validate FieldBinding Support
 
 Unfortunately, do to the way PCLs behave, I couldn't roll in any other validation libraries. I am sure it is possible, I ran into a wall and needed to back some stuff out, so I created a new annotation framework :p.
 
