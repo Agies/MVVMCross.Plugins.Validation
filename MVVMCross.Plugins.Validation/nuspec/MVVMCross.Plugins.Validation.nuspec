@@ -20,11 +20,11 @@
     </metadata>
     <files>
         <file src="content\MonoAndroid\Bootstrap\ValidationPluginBootstrap.cs.pp" target="content\MonoAndroid\Bootstrap\ValidationPluginBootstrap.cs.pp" />
-        <file src="content\MonoTouch\Bootstrap\ValidationPluginBootstrap.cs.pp" target="content\MonoTouch\Bootstrap\ValidationPluginBootstrap.cs.pp" />
+        <file src="content\Xamarin.iOS10\Bootstrap\ValidationPluginBootstrap.cs.pp" target="content\Xamarin.iOS10\Bootstrap\ValidationPluginBootstrap.cs.pp" />
         <file src="..\MVVMCross.Plugins.Validation.Droid\bin\Debug\MVVMCross.Plugins.Validation.dll" target="lib\MonoAndroid\MVVMCross.Plugins.Validation.dll" />
         <file src="..\MVVMCross.Plugins.Validation.Droid\bin\Debug\MVVMCross.Plugins.Validation.Droid.dll" target="lib\MonoAndroid\MVVMCross.Plugins.Validation.Droid.dll" />
-        <file src="..\MVVMCross.Plugins.Validation.Touch\bin\iPhone\Debug\MVVMCross.Plugins.Validation.dll" target="lib\MonoTouch\MVVMCross.Plugins.Validation.dll" />
-        <file src="..\MVVMCross.Plugins.Validation.Touch\bin\iPHone\Debug\MVVMCross.Plugins.Validation.Touch.dll" target="lib\MonoTouch\MVVMCross.Plugins.Validation.Touch.dll" />
+        <file src="..\MVVMCross.Plugins.Validation.Touch\bin\iPhone\Debug\MVVMCross.Plugins.Validation.dll" target="lib\Xamarin.iOS10\MVVMCross.Plugins.Validation.dll" />
+        <file src="..\MVVMCross.Plugins.Validation.Touch\bin\iPHone\Debug\MVVMCross.Plugins.Validation.Touch.dll" target="lib\Xamarin.iOS10\MVVMCross.Plugins.Validation.Touch.dll" />
         <file src="..\MVVMCross.Plugins.Validation.Core\bin\Debug\MVVMCross.Plugins.Validation.dll" target="lib\portable-win+net45+sl50+wp8+MonoAndroid+MonoTouch\MVVMCross.Plugins.Validation.dll" />
     </files>
 </package>
