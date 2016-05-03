@@ -2,14 +2,14 @@
 
 namespace MVVMCross.Plugins.Validation
 {
-    public class StringLengthValidation<T> : IValidation<T>
+    public class StringLengthValidation : IValidation
     {
-        private readonly Func<T, bool> _predicate;
+        private readonly Func<string, bool> _predicate;
         private string _message;
         private int _maximumLength;
         private int _minimumLength;
 
-        public StringLengthValidation(Func<T, bool> predicate, int minimumLength, int maximumLength, string message)
+        public StringLengthValidation(Func<string, bool> predicate, int minimumLength, int maximumLength, string message)
         {
             _predicate = predicate;
             _maximumLength = maximumLength;
@@ -19,10 +19,12 @@ namespace MVVMCross.Plugins.Validation
 
         public IErrorInfo Validate(string propertyName, object value, object subject)
         {
-            return Validate(propertyName, (T)value, subject);
+            if (value == null)
+                return null;
+            return Validate(propertyName, value.ToString(), subject);
         }
 
-        public IErrorInfo Validate(string propertyName, T value, object subject)
+        public IErrorInfo Validate(string propertyName, string value, object subject)
         {
             if (!_predicate(value))
             {

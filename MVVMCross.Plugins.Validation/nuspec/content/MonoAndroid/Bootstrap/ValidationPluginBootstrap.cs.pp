@@ -1,4 +1,4 @@
-using MvvmCross.Core.Plugins;
+using MvvmCross.Platform.Plugins;
 
 namespace $rootnamespace$.Bootstrap
 {

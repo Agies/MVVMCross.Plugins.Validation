@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace MVVMCross.Plugins.Validation.Validators
+namespace MVVMCross.Plugins.Validation
 {
     public class RangeAttribute : ValidationAttribute
     {
@@ -51,7 +51,7 @@ namespace MVVMCross.Plugins.Validation.Validators
             if (!allowTypes.Contains(valueType))
                 throw new NotSupportedException("RangeAttribute Validator for type " + valueType.Name + " is not supported.");
 
-            return new RangeValidation<decimal>(num => num >= decimal.Parse(Minimum.ToString()) && num <= decimal.Parse(Maximum.ToString()), 
+            return new RangeValidation(num => num >= decimal.Parse(Minimum.ToString()) && num <= decimal.Parse(Maximum.ToString()), 
                 Minimum, Maximum, Message);
         }
     }

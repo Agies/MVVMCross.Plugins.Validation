@@ -37,6 +37,16 @@ namespace MVVMCross.Plugins.Validation
                         new ValidationInfo(propertyInfo, validationAttribute.CreateValidation(propertyInfo.PropertyType), validationAttribute.Groups));
                 }
             }
+            var fields = type.GetRuntimeFields();
+            foreach (var fieldInfo in fields)
+            {
+                var attributes = fieldInfo.GetCustomAttributes(true).OfType<ValidationAttribute>().ToArray();
+                foreach (var validationAttribute in attributes)
+                {
+                    validationCollection.Add(
+                        new ValidationInfo(fieldInfo, validationAttribute.CreateValidation(fieldInfo.FieldType), validationAttribute.Groups));
+                }
+            }
             return validationCollection;
         }
 
@@ -45,14 +55,14 @@ namespace MVVMCross.Plugins.Validation
             var collection = Initialize(subject);
             var result = collection
                 .Where(c => c.Groups.IsNullOrEmpty() || c.Groups.Contains(group))
-                .Select(c => c.Validation.Validate(c.Property.Name, c.Property.GetValue(subject, null), subject))
+                .Select(c => c.Validation.Validate(c.Member.Name, (c.Member as PropertyInfo)?.GetValue(subject, null) ?? (c.Member as FieldInfo)?.GetValue(subject), subject))
                 .Where(t => t != null);
             return new ErrorCollection(result.ToList());
         }
 
-        public bool IsRequired(object subject, string propertyName)
+        public bool IsRequired(object subject, string memberName)
         {
-            return Initialize(subject).Any(v => v.Property.Name == propertyName && HasRequiredValidator(v.Validation.GetType()));
+            return Initialize(subject).Any(v => v.Member.Name == memberName && HasRequiredValidator(v.Validation.GetType()));
         }
 
         private bool HasRequiredValidator(Type validationType)

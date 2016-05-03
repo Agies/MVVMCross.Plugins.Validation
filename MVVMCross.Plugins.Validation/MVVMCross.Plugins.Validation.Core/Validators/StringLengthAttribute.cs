@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace MVVMCross.Plugins.Validation.Validators
+namespace MVVMCross.Plugins.Validation
 {
     public class StringLengthAttribute : ValidationAttribute
     {
@@ -21,7 +21,7 @@ namespace MVVMCross.Plugins.Validation.Validators
             if (valueType != typeof(string))
                 throw new NotSupportedException("StringLength Validator for type " + valueType.Name + " is not supported.");
 
-            return new StringLengthValidation<string>(str =>
+            return new StringLengthValidation(str =>
             {
                 if (str.IsNullOrEmpty())
                     return true;
