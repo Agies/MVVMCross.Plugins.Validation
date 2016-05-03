@@ -2,13 +2,13 @@
 {
     public class ErrorInfo : IErrorInfo
     {
-        public ErrorInfo(string propertyName, string message)
+        public ErrorInfo(string memberName, string message)
         {
             Message = message;
-            PropertyName = propertyName;
+            MemberName = memberName;
         }
 
-        public string PropertyName { get; private set; }
+        public string MemberName { get; private set; }
         public string Message { get; private set; }
     }
 }

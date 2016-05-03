@@ -44,7 +44,7 @@ namespace MVVMCross.Plugins.Validation.Droid
         protected override void Validate(IErrorInfo errorInfo)
         {
             List<TextView> texts;
-            if (_sourceBindingRelationships.TryGetValue(errorInfo.PropertyName, out texts))
+            if (_sourceBindingRelationships.TryGetValue(errorInfo.MemberName, out texts))
             {
                 foreach (TextView editText in texts)
                 {

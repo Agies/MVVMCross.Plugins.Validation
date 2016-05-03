@@ -1,6 +1,8 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2012
+# Visual Studio 14
+VisualStudioVersion = 14.0.24720.0
+MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MVVMCross.Plugins.Validation", "MVVMCross.Plugins.Validation.Core\MVVMCross.Plugins.Validation.csproj", "{28F5F62B-17A7-4AC9-9079-4C9EFB898E83}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MVVMCross.Plugins.Validation.Droid", "MVVMCross.Plugins.Validation.Droid\MVVMCross.Plugins.Validation.Droid.csproj", "{5ED8B5D6-7E83-48DF-8A83-BF076B7B569A}"
@@ -20,6 +22,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "nuspec", "nuspec", "{43B0FD
 	ProjectSection(SolutionItems) = preProject
 		nuspec\MVVMCross.Plugins.Validation.1.0.0.nuspec = nuspec\MVVMCross.Plugins.Validation.1.0.0.nuspec
 	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MVVMCross.Plugins.Validation.ForFieldBinding", "MVVMCross.Plugins.Validation.ForFieldBinding\MVVMCross.Plugins.Validation.ForFieldBinding.csproj", "{2FFE26FF-F5ED-4F97-9DE5-26D952D0A703}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -43,6 +47,10 @@ Global
 		{7E7F730A-0994-4475-91AD-6F85EFBFD721}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7E7F730A-0994-4475-91AD-6F85EFBFD721}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7E7F730A-0994-4475-91AD-6F85EFBFD721}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2FFE26FF-F5ED-4F97-9DE5-26D952D0A703}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2FFE26FF-F5ED-4F97-9DE5-26D952D0A703}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2FFE26FF-F5ED-4F97-9DE5-26D952D0A703}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2FFE26FF-F5ED-4F97-9DE5-26D952D0A703}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

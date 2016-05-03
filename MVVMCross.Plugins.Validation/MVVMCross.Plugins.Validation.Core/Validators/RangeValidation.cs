@@ -2,14 +2,14 @@
 
 namespace MVVMCross.Plugins.Validation
 {
-    public class RangeValidation<T> : IValidation<T>
+    public class RangeValidation : IValidation
     {
-        private readonly Func<T, bool> _predicate;
+        private readonly Func<decimal, bool> _predicate;
         private string _message;
         private object _maximum;
         private object _minimum;
 
-        public RangeValidation(Func<T, bool> predicate, object minimum, object maximum, string message)
+        public RangeValidation(Func<decimal, bool> predicate, object minimum, object maximum, string message)
         {
             _predicate = predicate;
             _minimum = minimum;
@@ -19,10 +19,10 @@ namespace MVVMCross.Plugins.Validation
 
         public IErrorInfo Validate(string propertyName, object value, object subject)
         {
-            return Validate(propertyName, (T)value, subject);
+            return Validate(propertyName, decimal.Parse(value.ToString()), subject);
         }
 
-        public IErrorInfo Validate(string propertyName, T value, object subject)
+        public IErrorInfo Validate(string propertyName, decimal value, object subject)
         {
             if (!_predicate(value))
             {

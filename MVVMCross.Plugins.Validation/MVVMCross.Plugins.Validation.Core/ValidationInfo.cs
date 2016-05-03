@@ -4,20 +4,20 @@ namespace MVVMCross.Plugins.Validation
 {
     public class ValidationInfo : IValidationInfo
     {
-        public ValidationInfo(PropertyInfo property, IValidation validation, string[] groups)
+        public ValidationInfo(MemberInfo member, IValidation validation, string[] groups)
         {
             Groups = groups;
-            Property = property;
+            Member = member;
             Validation = validation;
         }
 
-        public PropertyInfo Property { get; private set; }
+        public MemberInfo Member { get; private set; }
         public IValidation Validation { get; private set; }
         public string[] Groups { get; private set; }
 
         public override string ToString()
         {
-            return string.Format("Validating {0} with {1} during {2}", Property.Name, Validation, string.Join(", ", (Groups ?? new[]{"All"})));
+            return string.Format("Validating {0} with {1} during {2}", Member.Name, Validation, string.Join(", ", (Groups ?? new[]{"All"})));
         }
     }
 }

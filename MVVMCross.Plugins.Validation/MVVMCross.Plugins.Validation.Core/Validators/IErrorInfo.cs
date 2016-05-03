@@ -2,7 +2,7 @@
 {
     public interface IErrorInfo
     {
-        string PropertyName { get; }
+        string MemberName { get; }
         string Message { get; }
     }
 }
