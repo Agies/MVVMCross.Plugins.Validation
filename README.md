@@ -1,5 +1,5 @@
 Validation Plug-in for MVVMCross
--------------------------------
+--------------------------------
 Read about usage here http://agiescode.ghost.io/2014/05/10/mobile-project-one/
 
 
