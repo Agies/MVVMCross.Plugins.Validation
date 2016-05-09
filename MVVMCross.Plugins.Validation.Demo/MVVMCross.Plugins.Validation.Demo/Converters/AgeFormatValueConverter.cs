@@ -16,5 +16,12 @@ namespace MVVMCross.Plugins.Validation.Demo.Converters
 
             return value.ToString();
         }
+
+        protected override int ConvertBack(string value, Type targetType, object parameter, System.Globalization.CultureInfo culture)
+        {
+            var num = 0;
+            int.TryParse(value, out num);
+            return num;
+        }
     }
 }
