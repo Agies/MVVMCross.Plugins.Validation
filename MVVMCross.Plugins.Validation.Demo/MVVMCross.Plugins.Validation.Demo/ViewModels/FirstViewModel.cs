@@ -47,7 +47,7 @@ namespace MVVMCross.Plugins.Validation.Demo.ViewModels
             var errors = validator.Validate(this);
             if (!errors.IsValid)
             {
-                toastService.DisplayErrors(errors);
+                toastService.DisplayErrors(errors); //Display errors here.
                 return;
             }
             toastService.DisplayMessage("Submitted");
