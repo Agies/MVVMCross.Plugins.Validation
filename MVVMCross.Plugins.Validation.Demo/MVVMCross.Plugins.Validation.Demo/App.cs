@@ -1,8 +1,9 @@
-using Cirrious.CrossCore.IoC;
+using MvvmCross.Platform;
+using MvvmCross.Platform.IoC;
 
 namespace MVVMCross.Plugins.Validation.Demo
 {
-    public class App : Cirrious.MvvmCross.ViewModels.MvxApplication
+    public class App : MvvmCross.Core.ViewModels.MvxApplication
     {
         public override void Initialize()
         {
@@ -10,7 +11,9 @@ namespace MVVMCross.Plugins.Validation.Demo
                 .EndingWith("Service")
                 .AsInterfaces()
                 .RegisterAsLazySingleton();
-				
+
+            Mvx.RegisterType<IValidator, Validator>();
+
             RegisterAppStart<ViewModels.FirstViewModel>();
         }
     }

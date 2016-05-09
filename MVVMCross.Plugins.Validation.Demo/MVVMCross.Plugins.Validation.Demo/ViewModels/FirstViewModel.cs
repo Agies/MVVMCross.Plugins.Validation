@@ -1,15 +1,56 @@
-using Cirrious.MvvmCross.ViewModels;
+using MvvmCross.Core.ViewModels;
+using MvvmCross.FieldBinding;
+using MvvmCross.Platform;
+using MVVMCross.Plugins.Validation.ForFieldBinding;
 
 namespace MVVMCross.Plugins.Validation.Demo.ViewModels
 {
     public class FirstViewModel 
-		: MvxViewModel
+        : MvxViewModel
     {
-		private string _hello = "Hello MvvmCross";
-        public string Hello
-		{ 
-			get { return _hello; }
-			set { _hello = value; RaisePropertyChanged(() => Hello); }
-		}
+
+        /// <summary>
+        /// Use MvvmCross.Plugin.FieldBinding
+        /// </summary>
+        [NCFieldRequired("{0} is required")]
+        public INC<string> Name = new NC<string>();
+
+
+        private int age;
+
+        [Range(18, 60, "{0} must between {1} and {2}")]
+        public int Age
+        {
+            get { return age; }
+            set { SetProperty(ref age, value); }
+        }
+
+        public IMvxCommand SubmitCommand { get; set; }
+
+
+        IMvxToastService toastService;
+        IValidator validator;
+
+        public FirstViewModel(IValidator validator, IMvxToastService toastService)
+        {
+            this.toastService = toastService;
+            this.validator = validator;
+        }
+
+        public override void Start()
+        {
+            SubmitCommand = new MvxCommand(OnSubmit);
+        }
+
+        private void OnSubmit()
+        {
+            var errors = validator.Validate(this);
+            if (!errors.IsValid)
+            {
+                toastService.DisplayErrors(errors); //Display errors here.
+                return;
+            }
+            toastService.DisplayMessage("Submitted");
+        }
     }
 }

@@ -1,33 +1,23 @@
-using System.Drawing;
-using Cirrious.MvvmCross.Binding.BindingContext;
-using Cirrious.MvvmCross.Touch.Views;
-using MonoTouch.ObjCRuntime;
-using MonoTouch.UIKit;
-using MonoTouch.Foundation;
-using MVVMCross.Plugins.Validation.Demo.ViewModels;
+using MvvmCross.Binding.BindingContext;
+using MvvmCross.iOS.Views;
 
 namespace MVVMCross.Plugins.Validation.Demo.Touch.Views
 {
-    [Register("FirstView")]
-    public class FirstView : MvxViewController
+    public partial class FirstView : MvxViewController
     {
+        public FirstView() : base("FirstView", null)
+        {
+        }
+
         public override void ViewDidLoad()
         {
-            View = new UIView(){ BackgroundColor = UIColor.White};
             base.ViewDidLoad();
 
-			// ios7 layout
-            if (RespondsToSelector(new Selector("edgesForExtendedLayout")))
-               EdgesForExtendedLayout = UIRectEdge.None;
-			   
-            var label = new UILabel(new RectangleF(10, 10, 300, 40));
-            Add(label);
-            var textField = new UITextField(new RectangleF(10, 50, 300, 40));
-            Add(textField);
-
-            var set = this.CreateBindingSet<FirstView, FirstViewModel>();
-            set.Bind(label).To(vm => vm.Hello);
-            set.Bind(textField).To(vm => vm.Hello);
+            var set = this.CreateBindingSet<FirstView, ViewModels.FirstViewModel>();
+            set.Bind(LblName).To(vm => vm.Name);
+            set.Bind(TxtName).To(vm => vm.Name);
+            set.Bind(LblAge).To(vm => vm.Age);
+            set.Bind(TxtAge).To(vm => vm.Age);
             set.Apply();
         }
     }

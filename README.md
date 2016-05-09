@@ -1,6 +1,32 @@
 Validation Plug-in for MVVMCross
 --------------------------------
-Read about usage here http://agiescode.ghost.io/2014/05/10/mobile-project-one/
+The usage is simple:
+```
+var errors = Mvx.Resolve<IValidator>().Validate(YourViewModelObj);
+if (!errors.IsValid)
+{
+       //TODO: You can display the errors there.
+       return;
+}
+```
+Of course, you must do RegistType in 'APP.cs':
+```
+public class App : MvvmCross.Core.ViewModels.MvxApplication
+{
+    public override void Initialize()
+    {
+        CreatableTypes()
+            .EndingWith("Service")
+            .AsInterfaces()
+            .RegisterAsLazySingleton();
+            
+        Mvx.RegisterType<IValidator, Validator>();  //Regist IValidator
+        
+        RegisterAppStart<ViewModels.FirstViewModel>();
+    }
+}
+```
+Read about more usage here http://agiescode.ghost.io/2014/05/10/mobile-project-one/
 
 
 - 2015/5/12 Added iOS and Android Support

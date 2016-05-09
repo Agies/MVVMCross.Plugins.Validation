@@ -1,4 +1,4 @@
-using Cirrious.CrossCore.Plugins;
+using MvvmCross.Platform.Plugins;
 
 namespace MVVMCross.Plugins.Validation.Demo.Droid.Bootstrap
 {

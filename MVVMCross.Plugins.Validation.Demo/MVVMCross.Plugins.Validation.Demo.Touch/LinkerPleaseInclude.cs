@@ -1,13 +1,14 @@
-using System;
 using System.Collections.Specialized;
 using System.Windows.Input;
-using MonoTouch.UIKit;
+using MvvmCross.iOS.Views;
+using Foundation;
+using UIKit;
 
 namespace MVVMCross.Plugins.Validation.Demo.Touch
 {
-    // This class is never actually executed, but when Xamarin linking is enabled it does how to ensure types and properties
+    // This class is never actually executed, but when Xamarin linking is enabled it does ensure types and properties
     // are preserved in the deployed app
-    [MonoTouch.Foundation.Preserve(AllMembers = true)]
+    [Preserve(AllMembers = true)]
     public class LinkerPleaseInclude
     {
         public void Include(UIButton uiButton)
@@ -37,6 +38,7 @@ namespace MVVMCross.Plugins.Validation.Demo.Touch
         public void Include(UILabel label)
         {
             label.Text = label.Text + "";
+            label.AttributedText = new NSAttributedString(label.AttributedText.ToString() + "");
         }
 
         public void Include(UIImageView imageView)
@@ -47,7 +49,7 @@ namespace MVVMCross.Plugins.Validation.Demo.Touch
         public void Include(UIDatePicker date)
         {
             date.Date = date.Date.AddSeconds(1);
-            date.ValueChanged += (sender, args) => { date.Date = DateTime.MaxValue; };
+            date.ValueChanged += (sender, args) => { date.Date = NSDate.DistantFuture; };
         }
 
         public void Include(UISlider slider)
@@ -67,14 +69,41 @@ namespace MVVMCross.Plugins.Validation.Demo.Touch
             sw.ValueChanged += (sender, args) => { sw.On = false; };
         }
 
+        public void Include(MvxViewController vc)
+        {
+            vc.Title = vc.Title + "";
+        }
+
+        public void Include(UIStepper s)
+        {
+            s.Value = s.Value + 1;
+            s.ValueChanged += (sender, args) => { s.Value = 0; };
+        }
+
+        public void Include(UIPageControl s)
+        {
+            s.Pages = s.Pages + 1;
+            s.ValueChanged += (sender, args) => { s.Pages = 0; };
+        }
+
         public void Include(INotifyCollectionChanged changed)
         {
-            changed.CollectionChanged += (s,e) => { var test = string.Format("{0}{1}{2}{3}{4}", e.Action,e.NewItems, e.NewStartingIndex, e.OldItems, e.OldStartingIndex); } ;
+            changed.CollectionChanged += (s, e) => { var test = $"{e.Action}{e.NewItems}{e.NewStartingIndex}{e.OldItems}{e.OldStartingIndex}"; };
         }
-		
+
         public void Include(ICommand command)
         {
            command.CanExecuteChanged += (s, e) => { if (command.CanExecute(null)) command.Execute(null); };
+        }
+
+        public void Include(MvvmCross.Platform.IoC.MvxPropertyInjector injector)
+        {
+            injector = new MvvmCross.Platform.IoC.MvxPropertyInjector();
+        } 
+
+        public void Include(System.ComponentModel.INotifyPropertyChanged changed)
+        {
+            changed.PropertyChanged += (sender, e) => { var test = e.PropertyName; };
         }
     }
 }

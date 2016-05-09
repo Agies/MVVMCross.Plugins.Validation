@@ -1,7 +1,9 @@
 using Android.Content;
-using Cirrious.CrossCore.Platform;
-using Cirrious.MvvmCross.Droid.Platform;
-using Cirrious.MvvmCross.ViewModels;
+using MvvmCross.Droid.Platform;
+using MvvmCross.Core.ViewModels;
+using MvvmCross.Platform.Platform;
+using MvvmCross.Platform;
+using MVVMCross.Plugins.Validation.Droid;
 
 namespace MVVMCross.Plugins.Validation.Demo.Droid
 {
@@ -11,11 +13,18 @@ namespace MVVMCross.Plugins.Validation.Demo.Droid
         {
         }
 
+        protected override void InitializePlatformServices()
+        {
+            base.InitializePlatformServices();
+
+            Mvx.RegisterType<IMvxToastService>(() => new MvxAndroidToastService(ApplicationContext));
+        }
+
         protected override IMvxApplication CreateApp()
         {
             return new App();
         }
-		
+
         protected override IMvxTrace CreateDebugTrace()
         {
             return new DebugTrace();
