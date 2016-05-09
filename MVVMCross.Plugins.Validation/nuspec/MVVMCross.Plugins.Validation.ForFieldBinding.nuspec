@@ -10,7 +10,7 @@
         <projectUrl>https://github.com/Agies/MVVMCross.Plugins.Validation</projectUrl>
         <requireLicenseAcceptance>false</requireLicenseAcceptance>
         <description>Gives MVVMCross multiplatform validation support using existing bindings and attributes.</description>
-        <tags>mvvm mvvmcross xamarin monodroid monotouch</tags>
+        <tags>mvvm mvvmcross xamarin monodroid monotouch mvvmcross.plugin</tags>
         <dependencies>
 			<dependency id="MvvmCross.Plugin.FieldBinding" version="4.0.0" />
             <dependency id="MVVMCross.Plugins.Validation" version="2.0.0" />

@@ -1,15 +1,15 @@
-using Cirrious.MvvmCross.ViewModels;
+using MvvmCross.Core.ViewModels;
 
 namespace MVVMCross.Plugins.Validation.Demo.ViewModels
 {
     public class FirstViewModel 
-		: MvxViewModel
+        : MvxViewModel
     {
-		private string _hello = "Hello MvvmCross";
+        private string _hello = "Hello MvvmCross";
         public string Hello
-		{ 
-			get { return _hello; }
-			set { _hello = value; RaisePropertyChanged(() => Hello); }
-		}
+        { 
+            get { return _hello; }
+            set { SetProperty (ref _hello, value); }
+        }
     }
 }
