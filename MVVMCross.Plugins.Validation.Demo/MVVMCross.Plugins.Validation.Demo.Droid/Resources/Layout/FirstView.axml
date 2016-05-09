@@ -8,13 +8,13 @@
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:textSize="17dp"
-        android:hint="Please Enter Name"
+        android:hint="Enter your name here"
         local:MvxBind="Text Name" />
     <EditText
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:textSize="17dp"
-        android:hint="Please Enter Age"
+        android:hint="Enter your age here"
         android:inputType="number"
         local:MvxBind="Text Age" />
     <TextView
