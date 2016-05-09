@@ -7,8 +7,11 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FirstView">
             <connections>
                 <outlet property="view" destination="2" id="RRd-Eg-VrN"/>
-                <outlet property="Label" destination="5" id="name-outlet-5"/>
-                <outlet property="TextField" destination="10" id="name-outlet-10"/>
+                <outlet property="LblName" destination="5" id="name-outlet-5"/>
+                <outlet property="TxtName" destination="10" id="name-outlet-10"/>
+                <outlet property="btnSubmit" destination="21" id="name-outlet-21"/>
+                <outlet property="LblAge" destination="17" id="name-outlet-17"/>
+                <outlet property="TxtAge" destination="19" id="name-outlet-19"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
@@ -26,14 +29,38 @@
                         <constraint id="9" firstItem="5" firstAttribute="height" constant="21" placeholder="YES"/>
                     </constraints>
                 </label>
-                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Text" borderStyle="roundedRect" minimumFontSize="17" id="10" translatesAutoresizingMaskIntoConstraints="NO">
-                    <rect key="frame" x="10" y="103" width="580" height="30"/>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Text" borderStyle="roundedRect" minimumFontSize="17" id="10" translatesAutoresizingMaskIntoConstraints="NO" misplaced="YES" placeholder="Name">
+                    <rect key="frame" x="10" y="139" width="580" height="30"/>
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                     <textInputTraits key="textInputTraits"/>
                     <constraints>
                         <constraint id="14" firstItem="10" firstAttribute="height" constant="30" placeholder="YES"/>
                     </constraints>
                 </textField>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Label" lineBreakMode="tailTruncation" minimumFontSize="10" id="17" translatesAutoresizingMaskIntoConstraints="NO" misplaced="YES">
+                    <rect key="frame" x="10" y="101" width="580" height="21"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                    <constraints>
+                        <constraint id="18" firstItem="17" firstAttribute="height" constant="21" placeholder="YES"/>
+                    </constraints>
+                </label>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Text" borderStyle="roundedRect" minimumFontSize="17" id="19" translatesAutoresizingMaskIntoConstraints="NO" misplaced="YES" placeholder="Age">
+                    <rect key="frame" x="10" y="185" width="580" height="30"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                    <constraints>
+                        <constraint id="20" firstItem="19" firstAttribute="height" constant="30" placeholder="YES"/>
+                    </constraints>
+                </textField>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="21" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES">
+                    <rect key="frame" x="0.0" y="241" width="600" height="30"/>
+                    <state key="normal" title="Submit">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
             </subviews>
             <constraints>
                 <constraint id="6" firstItem="5" firstAttribute="top" secondItem="2" secondAttribute="top" constant="72"/>

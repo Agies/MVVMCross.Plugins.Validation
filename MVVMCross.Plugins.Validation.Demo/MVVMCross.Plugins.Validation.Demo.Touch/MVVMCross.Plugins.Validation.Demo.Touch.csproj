@@ -96,8 +96,6 @@
     <Compile Include="Views\FirstView.designer.cs">
       <DependentUpon>FirstView.cs</DependentUpon>
     </Compile>
-    <Content Include="AppDelegate.cs.txt" />
-    <Content Include="ToDo-MvvmCross\_ iOS UI.txt" />
     <None Include="Info.plist" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <InterfaceDefinition Include="Resources\LaunchScreen.xib" />

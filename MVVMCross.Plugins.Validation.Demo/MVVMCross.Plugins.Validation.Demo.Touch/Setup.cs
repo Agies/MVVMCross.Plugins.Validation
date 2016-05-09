@@ -1,7 +1,9 @@
 using MvvmCross.Core.ViewModels;
 using MvvmCross.iOS.Platform;
 using MvvmCross.iOS.Views.Presenters;
+using MvvmCross.Platform;
 using MvvmCross.Platform.Platform;
+using MVVMCross.Plugins.Validation.Touch;
 using UIKit;
 
 namespace MVVMCross.Plugins.Validation.Demo.Touch
@@ -16,6 +18,13 @@ namespace MVVMCross.Plugins.Validation.Demo.Touch
         public Setup(MvxApplicationDelegate applicationDelegate, IMvxIosViewPresenter presenter)
             : base(applicationDelegate, presenter)
         {
+        }
+
+        protected override void InitializePlatformServices()
+        {
+            base.InitializePlatformServices();
+
+            Mvx.RegisterType<IMvxToastService, MvxTouchToastService>();
         }
 
         protected override IMvxApplication CreateApp()

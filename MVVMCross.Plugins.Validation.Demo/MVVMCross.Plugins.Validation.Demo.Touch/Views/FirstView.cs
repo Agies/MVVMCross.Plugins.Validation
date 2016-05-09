@@ -14,8 +14,10 @@ namespace MVVMCross.Plugins.Validation.Demo.Touch.Views
             base.ViewDidLoad();
 
             var set = this.CreateBindingSet<FirstView, ViewModels.FirstViewModel>();
-            set.Bind(Label).To(vm => vm.Hello);
-            set.Bind(TextField).To(vm => vm.Hello);
+            set.Bind(LblName).To(vm => vm.Name);
+            set.Bind(TxtName).To(vm => vm.Name);
+            set.Bind(LblAge).To(vm => vm.Age);
+            set.Bind(TxtAge).To(vm => vm.Age);
             set.Apply();
         }
     }

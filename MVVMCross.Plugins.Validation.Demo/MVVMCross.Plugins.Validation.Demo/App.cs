@@ -1,3 +1,4 @@
+using MvvmCross.Platform;
 using MvvmCross.Platform.IoC;
 
 namespace MVVMCross.Plugins.Validation.Demo
@@ -10,6 +11,8 @@ namespace MVVMCross.Plugins.Validation.Demo
                 .EndingWith("Service")
                 .AsInterfaces()
                 .RegisterAsLazySingleton();
+
+            Mvx.RegisterType<IValidator, Validator>();
 
             RegisterAppStart<ViewModels.FirstViewModel>();
         }
