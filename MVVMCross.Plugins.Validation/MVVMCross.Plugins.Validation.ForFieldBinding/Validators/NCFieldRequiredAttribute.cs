@@ -14,7 +14,7 @@ namespace MVVMCross.Plugins.Validation.ForFieldBinding
         public override IValidation CreateValidation(Type valueType)
         {
             if (valueType.Name != "INC`1" || valueType.GenericTypeArguments.Length != 1)
-                throw new NotSupportedException("RangeAttribute Validator for type " + valueType.Name + " is not supported.");
+                throw new NotSupportedException("NCFieldRequiredAttribute Validator for type " + valueType.Name + " is not supported.");
 
             var genericityType = valueType.GenericTypeArguments[0];
             if (genericityType == null || genericityType == typeof(string))
@@ -34,7 +34,7 @@ namespace MVVMCross.Plugins.Validation.ForFieldBinding
             }
             if (genericityType.IsByRef)
                 return new NCFieldRequiredValidation<object>(o => o != null, Message);
-            throw new NotSupportedException("Required Validator for type " + genericityType.Name + " is not supported.");
+            throw new NotSupportedException("NCFieldRequiredAttribute Validator for type " + genericityType.Name + " is not supported.");
         }
     }
 }
