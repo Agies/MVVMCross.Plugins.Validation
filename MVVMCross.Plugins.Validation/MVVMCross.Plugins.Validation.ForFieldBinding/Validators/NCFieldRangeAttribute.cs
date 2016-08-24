@@ -37,7 +37,7 @@ namespace MVVMCross.Plugins.Validation.ForFieldBinding
 
         public override IValidation CreateValidation(Type valueType)
         {
-            if (valueType.Name != "INC`1" || valueType.GenericTypeArguments.Length != 1)
+            if (!valueType.FullName.Contains("MvvmCross.FieldBinding"))
                 throw new NotSupportedException("NCFieldRange Validator for type " + valueType.Name + " is not supported.");
 
             var allowTypes = new List<Type>

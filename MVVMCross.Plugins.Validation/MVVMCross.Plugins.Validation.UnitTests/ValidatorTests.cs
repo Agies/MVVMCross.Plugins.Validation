@@ -3,6 +3,8 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Moq;
 using MvvmCross.FieldBinding;
 using MVVMCross.Plugins.Validation.ForFieldBinding;
+using System.Collections.Generic;
+using System.Windows.Documents;
 
 namespace MVVMCross.Plugins.Validation.UnitTests
 {
@@ -128,15 +130,17 @@ namespace MVVMCross.Plugins.Validation.UnitTests
                 TestShouldBeLong = "t",
                 TestRange = 1,
                 TestRegex = "1",
+                TestCollectionCount = new List<string> { "1" },
             };
             model0.TestNCRequired.Value = "";
             model0.TestNCFieldStringLength.Value = "123456";
             model0.TestNCFieldShouldBeLong.Value = "t";
             model0.TestNCFieldRange.Value = 1;
             model0.TestNCFieldRegex.Value = "1";
+            model0.TestNCFieldCollectionCount.Value = new List<string> { "1" };
 
             var val0 = CUT.Validate(model0, "Test");
-            Assert.IsTrue(val0.Count == 12);
+            Assert.IsFalse(val0.IsValid);
 
             var val2 = CUT.Validate(new TestViewModel
             {
@@ -159,12 +163,14 @@ namespace MVVMCross.Plugins.Validation.UnitTests
                 TestShouldBeLong = "12",
                 TestRange = 3,
                 TestRegex = "18700000000",
+                //TestCollectionCount = new List<string> { "1", "2" },
             };
             model1.TestNCRequired.Value = "df";
             model1.TestNCFieldStringLength.Value = "12345";
             model1.TestNCFieldShouldBeLong.Value = "12";
             model1.TestNCFieldRange.Value = 3;
             model1.TestNCFieldRegex.Value = "18700000000";
+            model0.TestNCFieldCollectionCount.Value = new List<string> { "1", "2" };
             var val1 = CUT.Validate(model1, "Test");
             Assert.IsTrue(val1.IsValid);
         }
@@ -232,5 +238,17 @@ namespace MVVMCross.Plugins.Validation.UnitTests
 
         [NCFieldRegex(@"^1\d{10}$", "{0} is wrong")]
         public INC<string> TestNCFieldRegex = new NC<string>();
+
+        [CollectionCount(2, 4)]
+        public List<string> TestCollectionCount { get; set; } = new List<string>
+        {
+            "1", "2", "3"
+        };
+
+        [NCFieldCollectionCount(2, 4)]
+        public INCList<string> TestNCFieldCollectionCount = new NCList<string>(new List<string>
+        {
+            "1", "2", "3"
+        });
     }
 }

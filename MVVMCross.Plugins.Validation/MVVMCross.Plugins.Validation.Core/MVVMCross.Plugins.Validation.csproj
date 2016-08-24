@@ -39,6 +39,8 @@
     <Compile Include="IMvxToastService.cs" />
     <Compile Include="IMvxValidationService.cs" />
     <Compile Include="PluginLoader.cs" />
+    <Compile Include="Validators\CollectionCountAttribute.cs" />
+    <Compile Include="Validators\CollectionCountValidation.cs" />
     <Compile Include="Validators\RangeAttribute.cs" />
     <Compile Include="Validators\RegexAttribute.cs" />
     <Compile Include="Validators\RegexValidation.cs" />
