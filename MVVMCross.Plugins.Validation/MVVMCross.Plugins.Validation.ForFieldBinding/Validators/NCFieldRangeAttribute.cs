@@ -37,22 +37,8 @@ namespace MVVMCross.Plugins.Validation.ForFieldBinding
 
         public override IValidation CreateValidation(Type valueType)
         {
-            if (valueType.Name != "INC`1" || valueType.GenericTypeArguments.Length != 1)
-                throw new NotSupportedException("RangeAttribute Validator for type " + valueType.Name + " is not supported.");
-
-            var allowTypes = new List<Type>
-            {
-                typeof(short),
-                typeof(int),
-                typeof(float),
-                typeof(double),
-                typeof(ushort),
-                typeof(uint),
-            };
-
-            var genericityType = valueType.GenericTypeArguments[0];
-            if (!allowTypes.Contains(genericityType))
-                throw new NotSupportedException("RangeAttribute Validator for type INC<" + genericityType.Name + "> is not supported.");
+            if (!valueType.FullName.Contains("MvvmCross.FieldBinding"))
+                throw new NotSupportedException("NCFieldRange Validator for type " + valueType.Name + " is not supported.");
 
             return new NCFieldRangeValidation(num => num.Value >= decimal.Parse(Minimum.ToString()) && num.Value <= decimal.Parse(Maximum.ToString()), 
                 Minimum, Maximum, Message);

@@ -15,7 +15,8 @@ namespace MVVMCross.Plugins.Validation
 
         public IErrorInfo Validate(string propertyName, object value, object subject)
         {
-            if (value == null) return null;
+            if (value == null)
+                return null;
 
             var stringValue = value.ToString();
             if (!_regex.IsMatch(stringValue))

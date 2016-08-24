@@ -28,13 +28,15 @@
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
-    <OutputPath>bin\Release\</OutputPath>
+    <OutputPath>..\bin\Release\Mvx\Portable\</OutputPath>
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Validators\NCFieldCollectionCountAttribute.cs" />
+    <Compile Include="Validators\NCFieldCollectionCountValidation.cs" />
     <Compile Include="Validators\NCFieldRangeAttribute.cs" />
     <Compile Include="Validators\NCFieldRegexAttribute.cs" />
     <Compile Include="Validators\NCFieldRequiredAttribute.cs" />

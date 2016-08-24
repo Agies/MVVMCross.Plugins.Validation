@@ -19,12 +19,8 @@ namespace MVVMCross.Plugins.Validation.ForFieldBinding
 
         public override IValidation CreateValidation(Type valueType)
         {
-            if (valueType.Name != "INC`1" || valueType.GenericTypeArguments.Length != 1)
-                throw new NotSupportedException("RangeAttribute Validator for type " + valueType.Name + " is not supported.");
-
-            var genericityType = valueType.GenericTypeArguments[0];
-            if (genericityType != typeof(string))
-                throw new NotSupportedException("NCFieldStringLength Validator for type INC<" + genericityType.Name + "> is not supported.");
+            if (!valueType.FullName.Contains("MvvmCross.FieldBinding"))
+                throw new NotSupportedException("NCFieldStringLength Validator for type " + valueType.Name + " is not supported.");
 
             return new NCFieldStringLengthValidation(str =>
             {

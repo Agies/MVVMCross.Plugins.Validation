@@ -1,5 +1,7 @@
 ﻿using MvvmCross.FieldBinding;
 using System;
+using System.Linq;
+using System.Reflection;
 
 namespace MVVMCross.Plugins.Validation.ForFieldBinding
 {
@@ -20,6 +22,17 @@ namespace MVVMCross.Plugins.Validation.ForFieldBinding
 
         public IErrorInfo Validate(string fieldName, object value, object subject)
         {
+            if (value == null)
+                return null;
+
+            var incValue = value.GetType().GetRuntimeProperties().FirstOrDefault(x => x.Name == "Value").GetValue(value);
+            if (incValue == null)
+                return null;
+
+            var incValueType = incValue.GetType();
+            if (incValueType != typeof(string))
+                throw new NotSupportedException("NCFieldStringLength Validator for type " + value.GetType().FullName + " is not supported.");
+
             return Validate(fieldName, value as INC<string>, subject);
         }
 
