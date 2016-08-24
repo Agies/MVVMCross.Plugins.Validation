@@ -22,10 +22,6 @@ namespace MVVMCross.Plugins.Validation.ForFieldBinding
             if (!valueType.FullName.Contains("MvvmCross.FieldBinding"))
                 throw new NotSupportedException("NCFieldStringLength Validator for type " + valueType.Name + " is not supported.");
 
-            //var genericityType = valueType.GenericTypeArguments[0];
-            //if (genericityType != typeof(string))
-            //    throw new NotSupportedException("NCFieldStringLength Validator for type INC<" + genericityType.Name + "> is not supported.");
-
             return new NCFieldStringLengthValidation(str =>
             {
                 if (str == null || str.Value.IsNullOrEmpty())

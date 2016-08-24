@@ -34,10 +34,6 @@ namespace MVVMCross.Plugins.Validation.ForFieldBinding
             if (!valueType.FullName.Contains("MvvmCross.FieldBinding"))
                 throw new NotSupportedException("NCFieldCollectionCountAtribute Validator for type " + valueType.Name + " is not supported.");
 
-            //var genericityType = valueType.GenericTypeArguments[0];
-            //if (!genericityType.FullName.Contains("System.Collections") && !valueType.IsArray)
-            //    throw new NotSupportedException("NCFieldCollectionCountAtribute Validator for type INC<" + genericityType.Name + "> is not supported.");
-
             return new NCFieldCollectionCountValidation(num => num >= int.Parse(Minimum.ToString()) && num <= int.Parse(Maximum.ToString()),
                 Minimum, Maximum, Message);
         }

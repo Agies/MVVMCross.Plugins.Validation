@@ -29,6 +29,13 @@ namespace MVVMCross.Plugins.Validation.ForFieldBinding
                 return null;
 
             var incValue = value.GetType().GetRuntimeProperties().FirstOrDefault(x => x.Name == "Value").GetValue(value);
+            if (incValue == null)
+                return null;
+
+            var incValueType = incValue.GetType();
+            if (!incValueType.FullName.Contains("System.Collections") && !incValueType.IsArray)
+                throw new NotSupportedException("NCFieldCollectionCountAtribute Validator for type " + value.GetType().FullName + " is not supported.");
+
             return Validate(fieldName, incValue as ICollection, subject);
         }
 

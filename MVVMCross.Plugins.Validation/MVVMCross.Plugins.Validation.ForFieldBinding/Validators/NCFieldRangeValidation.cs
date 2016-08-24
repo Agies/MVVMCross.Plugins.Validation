@@ -25,8 +25,15 @@ namespace MVVMCross.Plugins.Validation.ForFieldBinding
             if (value == null)
                 return null;
 
+            decimal decValue = 0;
             var incValue = value.GetType().GetRuntimeProperties().FirstOrDefault(x => x.Name == "Value").GetValue(value);
-            return Validate(fieldName, new NC<decimal>(decimal.Parse(incValue.ToString())), subject);
+            if (incValue == null)
+                return null;
+
+            if (!decimal.TryParse(incValue?.ToString(), out decValue))
+                throw new NotSupportedException("NCFieldRange Validator for type " + value.GetType().FullName + " is not supported.");
+
+            return Validate(fieldName, new NC<decimal>(decValue), subject);
         }
 
         public IErrorInfo Validate(string fieldName, INC<decimal> value, object subject)
