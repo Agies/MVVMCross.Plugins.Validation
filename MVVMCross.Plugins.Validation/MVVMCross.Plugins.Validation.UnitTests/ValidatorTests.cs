@@ -240,15 +240,9 @@ namespace MVVMCross.Plugins.Validation.UnitTests
         public INC<string> TestNCFieldRegex = new NC<string>();
 
         [CollectionCount(2, 4)]
-        public List<string> TestCollectionCount { get; set; } = new List<string>
-        {
-            "1", "2", "3"
-        };
+        public List<string> TestCollectionCount { get; set; }
 
         [NCFieldCollectionCount(2, 4)]
-        public INCList<string> TestNCFieldCollectionCount = new NCList<string>(new List<string>
-        {
-            "1", "2", "3"
-        });
+        public INCList<string> TestNCFieldCollectionCount = new NCList<string>();
     }
 }

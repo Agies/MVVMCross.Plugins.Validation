@@ -24,6 +24,9 @@ namespace MVVMCross.Plugins.Validation
 
         public IErrorInfo Validate(string propertyName, object value, object subject)
         {
+            if (value == null)
+                return null;
+
             return Validate(propertyName, value as ICollection, subject);
         }
 
