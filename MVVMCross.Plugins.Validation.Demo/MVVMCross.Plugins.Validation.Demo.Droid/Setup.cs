@@ -20,6 +20,7 @@ namespace MvvmCross.Plugins.Validation.Demo.Droid
             Mvx.RegisterType<IMvxToastService>(() => new MvxAndroidToastService(ApplicationContext));
         }
 
+
         protected override IMvxApplication CreateApp()
         {
             return new App();
