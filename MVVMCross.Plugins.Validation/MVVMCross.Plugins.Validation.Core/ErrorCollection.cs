@@ -2,7 +2,7 @@
 using System.Collections.ObjectModel;
 using System.Linq;
 
-namespace MVVMCross.Plugins.Validation
+namespace MvvmCross.Plugins.Validation
 {
     public class ErrorCollection : Collection<IErrorInfo>, IErrorCollection
     {

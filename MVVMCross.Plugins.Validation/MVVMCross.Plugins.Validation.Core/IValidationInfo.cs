@@ -1,6 +1,6 @@
 ﻿using System.Reflection;
 
-namespace MVVMCross.Plugins.Validation
+namespace MvvmCross.Plugins.Validation
 {
     public interface IValidationInfo
     {

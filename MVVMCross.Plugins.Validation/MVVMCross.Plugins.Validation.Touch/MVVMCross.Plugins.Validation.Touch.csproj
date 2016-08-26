@@ -8,9 +8,9 @@
     <ProjectGuid>{7E7F730A-0994-4475-91AD-6F85EFBFD721}</ProjectGuid>
     <ProjectTypeGuids>{FEACFBD2-3405-455C-9665-78FE426C6842};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
-    <RootNamespace>MVVMCross.Plugins.Validation.Touch</RootNamespace>
+    <RootNamespace>MvvmCross.Plugins.Validation.Touch</RootNamespace>
     <IPhoneResourcePrefix>Resources</IPhoneResourcePrefix>
-    <AssemblyName>MVVMCross.Plugins.Validation.Touch</AssemblyName>
+    <AssemblyName>MvvmCross.Plugins.Validation.Touch</AssemblyName>
     <SolutionDir Condition="$(SolutionDir) == '' Or $(SolutionDir) == '*Undefined*'">..\</SolutionDir>
     <RestorePackages>true</RestorePackages>
     <TargetFrameworkIdentifier>Xamarin.iOS</TargetFrameworkIdentifier>
@@ -83,9 +83,9 @@
     <Reference Include="Xamarin.iOS" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\MVVMCross.Plugins.Validation.Core\MVVMCross.Plugins.Validation.csproj">
+    <ProjectReference Include="..\MVVMCross.Plugins.Validation.Core\MvvmCross.Plugins.Validation.csproj">
       <Project>{28F5F62B-17A7-4AC9-9079-4C9EFB898E83}</Project>
-      <Name>MVVMCross.Plugins.Validation</Name>
+      <Name>MvvmCross.Plugins.Validation</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

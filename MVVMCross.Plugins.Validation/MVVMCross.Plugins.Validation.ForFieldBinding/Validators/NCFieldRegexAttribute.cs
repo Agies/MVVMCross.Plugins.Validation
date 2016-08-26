@@ -1,6 +1,6 @@
 using System;
 
-namespace MVVMCross.Plugins.Validation.ForFieldBinding
+namespace MvvmCross.Plugins.Validation.ForFieldBinding
 {
     public class NCFieldRegexAttribute : NCFieldValidationAttribute
     {

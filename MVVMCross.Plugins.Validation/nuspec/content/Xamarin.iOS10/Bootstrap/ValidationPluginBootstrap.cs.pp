@@ -3,7 +3,7 @@ using MvvmCross.Platform.Plugins;
 namespace $rootnamespace$.Bootstrap
 {
     public class ValidationPluginBootstrap
-        : MvxLoaderPluginBootstrapAction<MVVMCross.Plugins.Validation.PluginLoader, MVVMCross.Plugins.Validation.Touch.Plugin>
+        : MvxLoaderPluginBootstrapAction<MvvmCross.Plugins.Validation.PluginLoader, MvvmCross.Plugins.Validation.Touch.Plugin>
     {
     }
 }

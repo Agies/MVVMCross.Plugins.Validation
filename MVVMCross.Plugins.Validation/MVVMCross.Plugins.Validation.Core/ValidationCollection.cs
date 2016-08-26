@@ -1,6 +1,6 @@
 ﻿using System.Collections.ObjectModel;
 
-namespace MVVMCross.Plugins.Validation
+namespace MvvmCross.Plugins.Validation
 {
     public class ValidationCollection : Collection<IValidationInfo>, IValidationCollection
     {

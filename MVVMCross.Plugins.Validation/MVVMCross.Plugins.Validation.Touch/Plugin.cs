@@ -1,7 +1,7 @@
 ﻿using MvvmCross.Platform;
 using MvvmCross.Platform.Plugins;
 
-namespace MVVMCross.Plugins.Validation.Touch
+namespace MvvmCross.Plugins.Validation.Touch
 {
     public class Plugin : IMvxPlugin
     {

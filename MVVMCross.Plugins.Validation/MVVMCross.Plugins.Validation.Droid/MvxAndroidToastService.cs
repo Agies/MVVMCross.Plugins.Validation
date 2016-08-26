@@ -1,9 +1,9 @@
 ﻿using System.Collections.Generic;
 using Android.Content;
 using Android.Widget;
-using MVVMCross.Plugins.Validation;
+using MvvmCross.Plugins.Validation;
 
-namespace MVVMCross.Plugins.Validation.Droid
+namespace MvvmCross.Plugins.Validation.Droid
 {
     public class MvxAndroidToastService : IMvxToastService
     {

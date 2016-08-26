@@ -1,6 +1,6 @@
 using System;
 
-namespace MVVMCross.Plugins.Validation
+namespace MvvmCross.Plugins.Validation
 {
     public class ShouldBeLongAttribute : ValidationAttribute
     {

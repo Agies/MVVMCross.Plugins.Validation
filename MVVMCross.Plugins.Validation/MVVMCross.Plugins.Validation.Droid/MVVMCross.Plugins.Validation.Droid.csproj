@@ -9,8 +9,8 @@
     <ProjectTypeGuids>{EFBA0AD7-5A72-4C68-AF49-83D382785DCF};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>MVVMCross.Plugins.Validation.Droid</RootNamespace>
-    <AssemblyName>MVVMCross.Plugins.Validation.Droid</AssemblyName>
+    <RootNamespace>MvvmCross.Plugins.Validation.Droid</RootNamespace>
+    <AssemblyName>MvvmCross.Plugins.Validation.Droid</AssemblyName>
     <FileAlignment>512</FileAlignment>
     <AndroidResgenFile>Resources\Resource.Designer.cs</AndroidResgenFile>
     <GenerateSerializationAssemblies>Off</GenerateSerializationAssemblies>
@@ -91,9 +91,9 @@
     <AndroidResource Include="Resources\Values\Strings.xml" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\MVVMCross.Plugins.Validation.Core\MVVMCross.Plugins.Validation.csproj">
+    <ProjectReference Include="..\MVVMCross.Plugins.Validation.Core\MvvmCross.Plugins.Validation.csproj">
       <Project>{28f5f62b-17a7-4ac9-9079-4c9efb898e83}</Project>
-      <Name>MVVMCross.Plugins.Validation</Name>
+      <Name>MvvmCross.Plugins.Validation</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />

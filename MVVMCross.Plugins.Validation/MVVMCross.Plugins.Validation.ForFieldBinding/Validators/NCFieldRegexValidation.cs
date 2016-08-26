@@ -2,7 +2,7 @@
 using System.Linq;
 using System.Reflection;
 
-namespace MVVMCross.Plugins.Validation.ForFieldBinding
+namespace MvvmCross.Plugins.Validation.ForFieldBinding
 {
     public class NCFieldRegexValidation : IValidation
     {

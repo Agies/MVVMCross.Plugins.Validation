@@ -6,11 +6,11 @@ using System.Runtime.InteropServices;
 // 有关程序集的一般信息由以下
 // 控制。更改这些特性值可修改
 // 与程序集关联的信息。
-[assembly: AssemblyTitle("MVVMCross.Plugins.Validation.ForFieldBinding")]
+[assembly: AssemblyTitle("MvvmCross.Plugins.Validation.ForFieldBinding")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("MVVMCross.Plugins.Validation.ForFieldBinding")]
+[assembly: AssemblyProduct("MvvmCross.Plugins.Validation.ForFieldBinding")]
 [assembly: AssemblyCopyright("版权所有(C)  2016")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]

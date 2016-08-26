@@ -9,7 +9,7 @@ using MvvmCross.Binding.BindingContext;
 using MvvmCross.Core.ViewModels;
 using MvvmCross.Plugins.Messenger;
 
-namespace MVVMCross.Plugins.Validation.Touch
+namespace MvvmCross.Plugins.Validation.Touch
 {
     public class MvxTouchValidationService : MvxValidationService
     {

@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace MVVMCross.Plugins.Validation
+namespace MvvmCross.Plugins.Validation
 {
     public interface IValidationCollection : ICollection<IValidationInfo>
     {

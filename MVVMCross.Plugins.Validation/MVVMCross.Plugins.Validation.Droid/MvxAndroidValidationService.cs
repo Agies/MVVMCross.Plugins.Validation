@@ -10,7 +10,7 @@ using MvvmCross.Plugins.Messenger;
 using MvvmCross.Binding.BindingContext;
 using MvvmCross.Core.ViewModels;
 
-namespace MVVMCross.Plugins.Validation.Droid
+namespace MvvmCross.Plugins.Validation.Droid
 {
     public class MvxAndroidValidationService : MvxValidationService
     {

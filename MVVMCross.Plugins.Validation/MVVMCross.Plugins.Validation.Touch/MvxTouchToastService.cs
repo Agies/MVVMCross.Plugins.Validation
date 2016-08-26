@@ -1,8 +1,8 @@
 using System.Collections.Generic;
 using UIKit;
-using MVVMCross.Plugins.Validation;
+using MvvmCross.Plugins.Validation;
 
-namespace MVVMCross.Plugins.Validation.Touch
+namespace MvvmCross.Plugins.Validation.Touch
 {
     public class MvxTouchToastService : IMvxToastService
     {

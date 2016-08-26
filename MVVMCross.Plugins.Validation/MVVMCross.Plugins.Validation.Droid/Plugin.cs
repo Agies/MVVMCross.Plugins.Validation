@@ -1,7 +1,7 @@
 ﻿using MvvmCross.Platform;
 using MvvmCross.Platform.Plugins;
 
-namespace MVVMCross.Plugins.Validation.Droid
+namespace MvvmCross.Plugins.Validation.Droid
 {
     public class Plugin : IMvxPlugin
     {

@@ -2,11 +2,10 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Moq;
 using MvvmCross.FieldBinding;
-using MVVMCross.Plugins.Validation.ForFieldBinding;
+using MvvmCross.Plugins.Validation.ForFieldBinding;
 using System.Collections.Generic;
-using System.Windows.Documents;
 
-namespace MVVMCross.Plugins.Validation.UnitTests
+namespace MvvmCross.Plugins.Validation.UnitTests
 {
     [TestClass]
     public class TestBase<T> where T : class

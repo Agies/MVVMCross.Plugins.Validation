@@ -1,7 +1,7 @@
 ﻿using MvvmCross.Core.ViewModels;
 using MvvmCross.Plugins.Messenger;
 
-namespace MVVMCross.Plugins.Validation.ViewModels
+namespace MvvmCross.Plugins.Validation.ViewModels
 {
     public class ViewModelBase : MvxViewModel
     {
