@@ -50,23 +50,19 @@
     <Reference Include="Mono.Android.Export" />
     <Reference Include="mscorlib" />
     <Reference Include="MvvmCross.Binding, Version=4.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\MvvmCross.Binding.4.2.0\lib\MonoAndroid\MvvmCross.Binding.dll</HintPath>
+      <HintPath>..\packages\MvvmCross.Binding.4.0.0\lib\MonoAndroid\MvvmCross.Binding.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="MvvmCross.Binding.Droid, Version=4.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\MvvmCross.Binding.4.2.0\lib\MonoAndroid\MvvmCross.Binding.Droid.dll</HintPath>
+      <HintPath>..\packages\MvvmCross.Binding.4.0.0\lib\MonoAndroid\MvvmCross.Binding.Droid.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="MvvmCross.Core, Version=4.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\MvvmCross.Core.4.2.0\lib\MonoAndroid\MvvmCross.Core.dll</HintPath>
+      <HintPath>..\packages\MvvmCross.Core.4.0.0\lib\MonoAndroid\MvvmCross.Core.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="MvvmCross.Droid, Version=4.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\MvvmCross.Core.4.2.0\lib\MonoAndroid\MvvmCross.Droid.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="MvvmCross.Droid.Shared, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\MvvmCross.Core.4.2.0\lib\MonoAndroid\MvvmCross.Droid.Shared.dll</HintPath>
+      <HintPath>..\packages\MvvmCross.Core.4.0.0\lib\MonoAndroid\MvvmCross.Droid.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="MvvmCross.FieldBinding, Version=4.0.0.0, Culture=neutral, processorArchitecture=MSIL">
@@ -74,15 +70,15 @@
       <Private>True</Private>
     </Reference>
     <Reference Include="MvvmCross.Localization, Version=4.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\MvvmCross.Binding.4.2.0\lib\MonoAndroid\MvvmCross.Localization.dll</HintPath>
+      <HintPath>..\packages\MvvmCross.Binding.4.0.0\lib\MonoAndroid\MvvmCross.Localization.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="MvvmCross.Platform, Version=4.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\MvvmCross.Platform.4.2.0\lib\MonoAndroid\MvvmCross.Platform.dll</HintPath>
+      <HintPath>..\packages\MvvmCross.Platform.4.0.0\lib\MonoAndroid\MvvmCross.Platform.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="MvvmCross.Platform.Droid, Version=4.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\MvvmCross.Platform.4.2.0\lib\MonoAndroid\MvvmCross.Platform.Droid.dll</HintPath>
+      <HintPath>..\packages\MvvmCross.Platform.4.0.0\lib\MonoAndroid\MvvmCross.Platform.Droid.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="MvvmCross.Plugins.FieldBinding, Version=4.0.0.0, Culture=neutral, processorArchitecture=MSIL">
@@ -126,8 +122,8 @@
     <None Include="packages.config" />
     <None Include="Resources\AboutResources.txt" />
     <None Include="Assets\AboutAssets.txt" />
-    <AndroidResource Include="Resources\layout\SplashScreen.axml" />
     <AndroidResource Include="Resources\layout\FirstView.axml" />
+    <AndroidResource Include="Resources\layout\SplashScreen.axml" />
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\values\Strings.xml" />
@@ -139,14 +135,14 @@
     <None Include="Properties\AndroidManifest.xml" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\values\SplashStyle.xml" />
-    <AndroidResource Include="Resources\drawable\splash.png" />
-  </ItemGroup>
-  <ItemGroup>
     <ProjectReference Include="..\MvvmCross.Plugins.Validation.Demo\MvvmCross.Plugins.Validation.Demo.csproj">
       <Project>{41ced16f-66c1-42f8-8858-4c76f3ae169e}</Project>
       <Name>MvvmCross.Plugins.Validation.Demo</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\values\SplashStyle.xml" />
+    <AndroidResource Include="Resources\drawable\splash.png" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
