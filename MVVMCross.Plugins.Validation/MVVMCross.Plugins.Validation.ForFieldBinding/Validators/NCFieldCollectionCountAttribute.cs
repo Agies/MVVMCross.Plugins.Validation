@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace MVVMCross.Plugins.Validation.ForFieldBinding
+namespace MvvmCross.Plugins.Validation.ForFieldBinding
 {
     public class NCFieldCollectionCountAttribute : NCFieldValidationAttribute
     {

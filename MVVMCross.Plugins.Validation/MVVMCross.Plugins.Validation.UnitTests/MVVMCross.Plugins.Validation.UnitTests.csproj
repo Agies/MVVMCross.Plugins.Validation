@@ -6,8 +6,8 @@
     <ProjectGuid>{21091569-5122-4204-98BB-30E39F3392EC}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>MVVMCross.Plugins.Validation.UnitTests</RootNamespace>
-    <AssemblyName>MVVMCross.Plugins.Validation.UnitTests</AssemblyName>
+    <RootNamespace>MvvmCross.Plugins.Validation.UnitTests</RootNamespace>
+    <AssemblyName>MvvmCross.Plugins.Validation.UnitTests</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{3AC096D0-A1C2-E12C-1390-A8335801FDAB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
@@ -123,13 +123,13 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\MVVMCross.Plugins.Validation.Core\MVVMCross.Plugins.Validation.csproj">
+    <ProjectReference Include="..\MVVMCross.Plugins.Validation.Core\MvvmCross.Plugins.Validation.csproj">
       <Project>{28F5F62B-17A7-4AC9-9079-4C9EFB898E83}</Project>
-      <Name>MVVMCross.Plugins.Validation</Name>
+      <Name>MvvmCross.Plugins.Validation</Name>
     </ProjectReference>
-    <ProjectReference Include="..\MVVMCross.Plugins.Validation.ForFieldBinding\MVVMCross.Plugins.Validation.ForFieldBinding.csproj">
+    <ProjectReference Include="..\MVVMCross.Plugins.Validation.ForFieldBinding\MvvmCross.Plugins.Validation.ForFieldBinding.csproj">
       <Project>{2ffe26ff-f5ed-4f97-9de5-26d952d0a703}</Project>
-      <Name>MVVMCross.Plugins.Validation.ForFieldBinding</Name>
+      <Name>MvvmCross.Plugins.Validation.ForFieldBinding</Name>
     </ProjectReference>
   </ItemGroup>
   <Choose>

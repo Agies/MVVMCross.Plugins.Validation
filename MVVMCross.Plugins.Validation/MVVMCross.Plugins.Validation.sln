@@ -1,13 +1,13 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
-VisualStudioVersion = 14.0.24720.0
+VisualStudioVersion = 14.0.25123.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MVVMCross.Plugins.Validation", "MVVMCross.Plugins.Validation.Core\MVVMCross.Plugins.Validation.csproj", "{28F5F62B-17A7-4AC9-9079-4C9EFB898E83}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MvvmCross.Plugins.Validation", "MvvmCross.Plugins.Validation.Core\MvvmCross.Plugins.Validation.csproj", "{28F5F62B-17A7-4AC9-9079-4C9EFB898E83}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MVVMCross.Plugins.Validation.Droid", "MVVMCross.Plugins.Validation.Droid\MVVMCross.Plugins.Validation.Droid.csproj", "{5ED8B5D6-7E83-48DF-8A83-BF076B7B569A}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MvvmCross.Plugins.Validation.Droid", "MvvmCross.Plugins.Validation.Droid\MvvmCross.Plugins.Validation.Droid.csproj", "{5ED8B5D6-7E83-48DF-8A83-BF076B7B569A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MVVMCross.Plugins.Validation.UnitTests", "MVVMCross.Plugins.Validation.UnitTests\MVVMCross.Plugins.Validation.UnitTests.csproj", "{21091569-5122-4204-98BB-30E39F3392EC}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MvvmCross.Plugins.Validation.UnitTests", "MvvmCross.Plugins.Validation.UnitTests\MvvmCross.Plugins.Validation.UnitTests.csproj", "{21091569-5122-4204-98BB-30E39F3392EC}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{06857898-906E-4F67-B987-4B7D7996ED1D}"
 	ProjectSection(SolutionItems) = preProject
@@ -16,14 +16,14 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{068578
 		.nuget\NuGet.targets = .nuget\NuGet.targets
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MVVMCross.Plugins.Validation.Touch", "MVVMCross.Plugins.Validation.Touch\MVVMCross.Plugins.Validation.Touch.csproj", "{7E7F730A-0994-4475-91AD-6F85EFBFD721}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MvvmCross.Plugins.Validation.Touch", "MvvmCross.Plugins.Validation.Touch\MvvmCross.Plugins.Validation.Touch.csproj", "{7E7F730A-0994-4475-91AD-6F85EFBFD721}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "nuspec", "nuspec", "{43B0FD01-0637-4949-AA21-8E35516D0160}"
 	ProjectSection(SolutionItems) = preProject
-		nuspec\MVVMCross.Plugins.Validation.1.0.0.nuspec = nuspec\MVVMCross.Plugins.Validation.1.0.0.nuspec
+		nuspec\MvvmCross.Plugins.Validation.1.0.0.nuspec = nuspec\MvvmCross.Plugins.Validation.1.0.0.nuspec
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MVVMCross.Plugins.Validation.ForFieldBinding", "MVVMCross.Plugins.Validation.ForFieldBinding\MVVMCross.Plugins.Validation.ForFieldBinding.csproj", "{2FFE26FF-F5ED-4F97-9DE5-26D952D0A703}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MvvmCross.Plugins.Validation.ForFieldBinding", "MvvmCross.Plugins.Validation.ForFieldBinding\MvvmCross.Plugins.Validation.ForFieldBinding.csproj", "{2FFE26FF-F5ED-4F97-9DE5-26D952D0A703}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

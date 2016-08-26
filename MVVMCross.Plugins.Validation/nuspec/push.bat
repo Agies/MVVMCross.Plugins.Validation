@@ -1,2 +1,2 @@
-nuget push MVVMCross.Plugins.Validation.*.*.*.nupkg
+nuget push MvvmCross.Plugins.Validation.*.*.*.nupkg
 pause

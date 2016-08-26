@@ -1,9 +1,9 @@
 using MvvmCross.Core.ViewModels;
 using MvvmCross.FieldBinding;
 using MvvmCross.Platform;
-using MVVMCross.Plugins.Validation.ForFieldBinding;
+using MvvmCross.Plugins.Validation.ForFieldBinding;
 
-namespace MVVMCross.Plugins.Validation.Demo.ViewModels
+namespace MvvmCross.Plugins.Validation.Demo.ViewModels
 {
     public class FirstViewModel 
         : MvxViewModel

@@ -1,22 +1,22 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
     <metadata>
-        <id>MVVMCross.Plugins.Validation.ForFieldBinding</id>
-        <version>2.1.0</version>
-        <title>MVVMCross - Validation Plugin - ForFieldBinding</title>
+        <id>MvvmCross.Plugins.Validation.ForFieldBinding</id>
+        <version>2.1.1</version>
+        <title>MvvmCross - Validation Plugin - ForFieldBinding</title>
         <authors>Agies, ZhangZihe</authors>
         <owners>Jerel R Hass</owners>
         <licenseUrl>http://opensource.org/licenses/ms-pl.html</licenseUrl>
-        <projectUrl>https://github.com/Agies/MVVMCross.Plugins.Validation</projectUrl>
+        <projectUrl>https://github.com/Agies/MvvmCross.Plugins.Validation</projectUrl>
         <requireLicenseAcceptance>false</requireLicenseAcceptance>
-        <description>Gives MVVMCross multiplatform validation support using existing bindings and attributes.</description>
+        <description>Gives MvvmCross multiplatform validation support using existing bindings and attributes.</description>
         <tags>mvvm mvvmcross xamarin monodroid monotouch mvvmcross.plugin</tags>
         <dependencies>
 			<dependency id="MvvmCross.Plugin.FieldBinding" version="4.0.0" />
-            <dependency id="MVVMCross.Plugins.Validation" version="2.0.0" />
+            <dependency id="MvvmCross.Plugins.Validation" version="2.1.1" />
         </dependencies>
     </metadata>
     <files>
-        <file src="..\bin\Release\Mvx\Portable\MVVMCross.Plugins.Validation.ForFieldBinding.dll" target="lib\portable-win+net45+sl50+wp8+MonoAndroid+MonoTouch\MVVMCross.Plugins.Validation.ForFieldBinding.dll" />
+        <file src="..\bin\Release\Mvx\Portable\MvvmCross.Plugins.Validation.ForFieldBinding.dll" target="lib\portable-win+net45+sl50+wp8+MonoAndroid+MonoTouch\MvvmCross.Plugins.Validation.ForFieldBinding.dll" />
     </files>
 </package>

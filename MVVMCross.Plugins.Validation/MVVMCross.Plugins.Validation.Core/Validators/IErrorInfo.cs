@@ -1,4 +1,4 @@
-﻿namespace MVVMCross.Plugins.Validation
+﻿namespace MvvmCross.Plugins.Validation
 {
     public interface IErrorInfo
     {

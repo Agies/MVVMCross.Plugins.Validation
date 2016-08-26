@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace MVVMCross.Plugins.Validation.ForFieldBinding
+namespace MvvmCross.Plugins.Validation.ForFieldBinding
 {
     [AttributeUsage(AttributeTargets.Class|AttributeTargets.Field, AllowMultiple = true, Inherited = false)]
     public abstract class NCFieldValidationAttribute : ValidationAttribute

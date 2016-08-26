@@ -9,7 +9,7 @@ using System;
 using System.CodeDom.Compiler;
 using UIKit;
 
-namespace MVVMCross.Plugins.Validation.Demo.Touch.Views
+namespace MvvmCross.Plugins.Validation.Demo.Touch.Views
 {
 	[Register ("FirstView")]
 	partial class FirstView

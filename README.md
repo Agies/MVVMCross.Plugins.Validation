@@ -1,4 +1,4 @@
-Validation Plug-in for MVVMCross
+Validation Plug-in for MvvmCross
 --------------------------------
 The usage is simple:
 ```
@@ -30,13 +30,13 @@ Read about more usage here http://agiescode.ghost.io/2014/05/10/mobile-project-o
 
 
 - 2015/5/12 Added iOS and Android Support
-- 2015/5/13 Nuget support https://www.nuget.org/packages/MVVMCross.Plugins.Validation/
+- 2015/5/13 Nuget support https://www.nuget.org/packages/MvvmCross.Plugins.Validation/
 - 2016/4/09 Added FieldBinding Support
 
 Unfortunately, do to the way PCLs behave, I couldn't roll in any other validation libraries. I am sure it is possible, I ran into a wall and needed to back some stuff out, so I created a new annotation framework :p.
 
 
-MVVMCross.Plugins.Validation is distributed under
+MvvmCross.Plugins.Validation is distributed under
 ------------------------------------------------
 
 Microsoft Public License (MS-PL)

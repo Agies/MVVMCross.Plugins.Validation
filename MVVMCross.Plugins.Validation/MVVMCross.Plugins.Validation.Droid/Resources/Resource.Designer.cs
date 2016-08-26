@@ -9,9 +9,9 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: global::Android.Runtime.ResourceDesignerAttribute("MVVMCross.Plugins.Validation.Droid.Resource", IsApplication=false)]
+[assembly: global::Android.Runtime.ResourceDesignerAttribute("MvvmCross.Plugins.Validation.Droid.Resource", IsApplication=false)]
 
-namespace MVVMCross.Plugins.Validation.Droid
+namespace MvvmCross.Plugins.Validation.Droid
 {
 	
 	

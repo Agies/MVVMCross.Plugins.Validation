@@ -1,7 +1,7 @@
 using MvvmCross.Platform;
 using MvvmCross.Platform.IoC;
 
-namespace MVVMCross.Plugins.Validation.Demo
+namespace MvvmCross.Plugins.Validation.Demo
 {
     public class App : MvvmCross.Core.ViewModels.MvxApplication
     {

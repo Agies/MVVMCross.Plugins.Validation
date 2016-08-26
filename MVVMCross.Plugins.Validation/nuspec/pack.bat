@@ -1,4 +1,4 @@
 del *.nupkg
-nuget pack MVVMCross.Plugins.Validation.nuspec
-nuget pack MVVMCross.Plugins.Validation.ForFieldBinding.nuspec
+nuget pack MvvmCross.Plugins.Validation.nuspec
+nuget pack MvvmCross.Plugins.Validation.ForFieldBinding.nuspec
 pause

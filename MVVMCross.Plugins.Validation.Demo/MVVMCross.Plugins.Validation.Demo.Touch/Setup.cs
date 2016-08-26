@@ -3,10 +3,10 @@ using MvvmCross.iOS.Platform;
 using MvvmCross.iOS.Views.Presenters;
 using MvvmCross.Platform;
 using MvvmCross.Platform.Platform;
-using MVVMCross.Plugins.Validation.Touch;
+using MvvmCross.Plugins.Validation.Touch;
 using UIKit;
 
-namespace MVVMCross.Plugins.Validation.Demo.Touch
+namespace MvvmCross.Plugins.Validation.Demo.Touch
 {
     public class Setup : MvxIosSetup
     {

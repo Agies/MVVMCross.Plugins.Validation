@@ -1,6 +1,6 @@
 ﻿using MvvmCross.Plugins.Messenger;
 
-namespace MVVMCross.Plugins.Validation
+namespace MvvmCross.Plugins.Validation
 {
     public class ValidationMessage : MvxMessage
     {

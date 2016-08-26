@@ -2,7 +2,7 @@
 using System;
 using System.Linq.Expressions;
 
-namespace MVVMCross.Plugins.Validation.ForFieldBinding
+namespace MvvmCross.Plugins.Validation.ForFieldBinding
 {
     public class NCFieldRequiredAttribute : NCFieldValidationAttribute
     {

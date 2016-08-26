@@ -8,8 +8,8 @@
     <ProjectGuid>{2FFE26FF-F5ED-4F97-9DE5-26D952D0A703}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>MVVMCross.Plugins.Validation.ForFieldBinding</RootNamespace>
-    <AssemblyName>MVVMCross.Plugins.Validation.ForFieldBinding</AssemblyName>
+    <RootNamespace>MvvmCross.Plugins.Validation.ForFieldBinding</RootNamespace>
+    <AssemblyName>MvvmCross.Plugins.Validation.ForFieldBinding</AssemblyName>
     <DefaultLanguage>zh-CN</DefaultLanguage>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{786C830F-07A1-408B-BD7F-6EE04809D6DB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
@@ -75,9 +75,9 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\MVVMCross.Plugins.Validation.Core\MVVMCross.Plugins.Validation.csproj">
+    <ProjectReference Include="..\MVVMCross.Plugins.Validation.Core\MvvmCross.Plugins.Validation.csproj">
       <Project>{28f5f62b-17a7-4ac9-9079-4c9efb898e83}</Project>
-      <Name>MVVMCross.Plugins.Validation</Name>
+      <Name>MvvmCross.Plugins.Validation</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />

@@ -1,7 +1,7 @@
 using MvvmCross.Binding.BindingContext;
 using MvvmCross.iOS.Views;
 
-namespace MVVMCross.Plugins.Validation.Demo.Touch.Views
+namespace MvvmCross.Plugins.Validation.Demo.Touch.Views
 {
     public partial class FirstView : MvxViewController
     {

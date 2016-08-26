@@ -1,8 +1,9 @@
 using Android.App;
 using Android.OS;
 using MvvmCross.Droid.Views;
+using MvvnCross.Plugins.Validation.Demo.Droid;
 
-namespace MVVMCross.Plugins.Validation.Demo.Droid.Views
+namespace MvvmCross.Plugins.Validation.Demo.Droid.Views
 {
     [Activity(Label = "View for FirstViewModel")]
     public class FirstView : MvxActivity
