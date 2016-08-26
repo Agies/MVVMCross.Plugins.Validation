@@ -9,9 +9,9 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: global::Android.Runtime.ResourceDesignerAttribute("MvvnCross.Plugins.Validation.Demo.Droid.Resource", IsApplication=true)]
+[assembly: global::Android.Runtime.ResourceDesignerAttribute("MvvmCross.Plugins.Validation.Demo.Droid.Resource", IsApplication=true)]
 
-namespace MvvnCross.Plugins.Validation.Demo.Droid
+namespace MvvmCross.Plugins.Validation.Demo.Droid
 {
 	
 	
@@ -26,50 +26,50 @@ namespace MvvnCross.Plugins.Validation.Demo.Droid
 		
 		public static void UpdateIdValues()
 		{
-			global::MvvmCross.Binding.Droid.Resource.Attribute.MvxBind = global::MvvnCross.Plugins.Validation.Demo.Droid.Resource.Attribute.MvxBind;
-			global::MvvmCross.Binding.Droid.Resource.Attribute.MvxDropDownItemTemplate = global::MvvnCross.Plugins.Validation.Demo.Droid.Resource.Attribute.MvxDropDownItemTemplate;
-			global::MvvmCross.Binding.Droid.Resource.Attribute.MvxGroupItemTemplate = global::MvvnCross.Plugins.Validation.Demo.Droid.Resource.Attribute.MvxGroupItemTemplate;
-			global::MvvmCross.Binding.Droid.Resource.Attribute.MvxItemTemplate = global::MvvnCross.Plugins.Validation.Demo.Droid.Resource.Attribute.MvxItemTemplate;
-			global::MvvmCross.Binding.Droid.Resource.Attribute.MvxLang = global::MvvnCross.Plugins.Validation.Demo.Droid.Resource.Attribute.MvxLang;
-			global::MvvmCross.Binding.Droid.Resource.Attribute.MvxSource = global::MvvnCross.Plugins.Validation.Demo.Droid.Resource.Attribute.MvxSource;
-			global::MvvmCross.Binding.Droid.Resource.Attribute.MvxTemplate = global::MvvnCross.Plugins.Validation.Demo.Droid.Resource.Attribute.MvxTemplate;
-			global::MvvmCross.Binding.Droid.Resource.Id.MvvmCrossTagId = global::MvvnCross.Plugins.Validation.Demo.Droid.Resource.Id.MvvmCrossTagId;
-			global::MvvmCross.Binding.Droid.Resource.Id.MvxBindingTagUnique = global::MvvnCross.Plugins.Validation.Demo.Droid.Resource.Id.MvxBindingTagUnique;
-			global::MvvmCross.Binding.Droid.Resource.Styleable.MvxBinding = global::MvvnCross.Plugins.Validation.Demo.Droid.Resource.Styleable.MvxBinding;
-			global::MvvmCross.Binding.Droid.Resource.Styleable.MvxBinding_MvxBind = global::MvvnCross.Plugins.Validation.Demo.Droid.Resource.Styleable.MvxBinding_MvxBind;
-			global::MvvmCross.Binding.Droid.Resource.Styleable.MvxBinding_MvxLang = global::MvvnCross.Plugins.Validation.Demo.Droid.Resource.Styleable.MvxBinding_MvxLang;
-			global::MvvmCross.Binding.Droid.Resource.Styleable.MvxControl = global::MvvnCross.Plugins.Validation.Demo.Droid.Resource.Styleable.MvxControl;
-			global::MvvmCross.Binding.Droid.Resource.Styleable.MvxControl_MvxTemplate = global::MvvnCross.Plugins.Validation.Demo.Droid.Resource.Styleable.MvxControl_MvxTemplate;
-			global::MvvmCross.Binding.Droid.Resource.Styleable.MvxExpandableListView = global::MvvnCross.Plugins.Validation.Demo.Droid.Resource.Styleable.MvxExpandableListView;
-			global::MvvmCross.Binding.Droid.Resource.Styleable.MvxExpandableListView_MvxGroupItemTemplate = global::MvvnCross.Plugins.Validation.Demo.Droid.Resource.Styleable.MvxExpandableListView_MvxGroupItemTemplate;
-			global::MvvmCross.Binding.Droid.Resource.Styleable.MvxImageView = global::MvvnCross.Plugins.Validation.Demo.Droid.Resource.Styleable.MvxImageView;
-			global::MvvmCross.Binding.Droid.Resource.Styleable.MvxImageView_MvxSource = global::MvvnCross.Plugins.Validation.Demo.Droid.Resource.Styleable.MvxImageView_MvxSource;
-			global::MvvmCross.Binding.Droid.Resource.Styleable.MvxListView = global::MvvnCross.Plugins.Validation.Demo.Droid.Resource.Styleable.MvxListView;
-			global::MvvmCross.Binding.Droid.Resource.Styleable.MvxListView_MvxDropDownItemTemplate = global::MvvnCross.Plugins.Validation.Demo.Droid.Resource.Styleable.MvxListView_MvxDropDownItemTemplate;
-			global::MvvmCross.Binding.Droid.Resource.Styleable.MvxListView_MvxItemTemplate = global::MvvnCross.Plugins.Validation.Demo.Droid.Resource.Styleable.MvxListView_MvxItemTemplate;
-			global::MvvmCross.Plugins.Validation.Droid.Resource.Attribute.MvxBind = global::MvvnCross.Plugins.Validation.Demo.Droid.Resource.Attribute.MvxBind;
-			global::MvvmCross.Plugins.Validation.Droid.Resource.Attribute.MvxDropDownItemTemplate = global::MvvnCross.Plugins.Validation.Demo.Droid.Resource.Attribute.MvxDropDownItemTemplate;
-			global::MvvmCross.Plugins.Validation.Droid.Resource.Attribute.MvxGroupItemTemplate = global::MvvnCross.Plugins.Validation.Demo.Droid.Resource.Attribute.MvxGroupItemTemplate;
-			global::MvvmCross.Plugins.Validation.Droid.Resource.Attribute.MvxItemTemplate = global::MvvnCross.Plugins.Validation.Demo.Droid.Resource.Attribute.MvxItemTemplate;
-			global::MvvmCross.Plugins.Validation.Droid.Resource.Attribute.MvxLang = global::MvvnCross.Plugins.Validation.Demo.Droid.Resource.Attribute.MvxLang;
-			global::MvvmCross.Plugins.Validation.Droid.Resource.Attribute.MvxSource = global::MvvnCross.Plugins.Validation.Demo.Droid.Resource.Attribute.MvxSource;
-			global::MvvmCross.Plugins.Validation.Droid.Resource.Attribute.MvxTemplate = global::MvvnCross.Plugins.Validation.Demo.Droid.Resource.Attribute.MvxTemplate;
-			global::MvvmCross.Plugins.Validation.Droid.Resource.Id.MvvmCrossTagId = global::MvvnCross.Plugins.Validation.Demo.Droid.Resource.Id.MvvmCrossTagId;
-			global::MvvmCross.Plugins.Validation.Droid.Resource.Id.MvxBindingTagUnique = global::MvvnCross.Plugins.Validation.Demo.Droid.Resource.Id.MvxBindingTagUnique;
-			global::MvvmCross.Plugins.Validation.Droid.Resource.String.ApplicationName = global::MvvnCross.Plugins.Validation.Demo.Droid.Resource.String.ApplicationName;
-			global::MvvmCross.Plugins.Validation.Droid.Resource.String.Hello = global::MvvnCross.Plugins.Validation.Demo.Droid.Resource.String.Hello;
-			global::MvvmCross.Plugins.Validation.Droid.Resource.Styleable.MvxBinding = global::MvvnCross.Plugins.Validation.Demo.Droid.Resource.Styleable.MvxBinding;
-			global::MvvmCross.Plugins.Validation.Droid.Resource.Styleable.MvxBinding_MvxBind = global::MvvnCross.Plugins.Validation.Demo.Droid.Resource.Styleable.MvxBinding_MvxBind;
-			global::MvvmCross.Plugins.Validation.Droid.Resource.Styleable.MvxBinding_MvxLang = global::MvvnCross.Plugins.Validation.Demo.Droid.Resource.Styleable.MvxBinding_MvxLang;
-			global::MvvmCross.Plugins.Validation.Droid.Resource.Styleable.MvxControl = global::MvvnCross.Plugins.Validation.Demo.Droid.Resource.Styleable.MvxControl;
-			global::MvvmCross.Plugins.Validation.Droid.Resource.Styleable.MvxControl_MvxTemplate = global::MvvnCross.Plugins.Validation.Demo.Droid.Resource.Styleable.MvxControl_MvxTemplate;
-			global::MvvmCross.Plugins.Validation.Droid.Resource.Styleable.MvxExpandableListView = global::MvvnCross.Plugins.Validation.Demo.Droid.Resource.Styleable.MvxExpandableListView;
-			global::MvvmCross.Plugins.Validation.Droid.Resource.Styleable.MvxExpandableListView_MvxGroupItemTemplate = global::MvvnCross.Plugins.Validation.Demo.Droid.Resource.Styleable.MvxExpandableListView_MvxGroupItemTemplate;
-			global::MvvmCross.Plugins.Validation.Droid.Resource.Styleable.MvxImageView = global::MvvnCross.Plugins.Validation.Demo.Droid.Resource.Styleable.MvxImageView;
-			global::MvvmCross.Plugins.Validation.Droid.Resource.Styleable.MvxImageView_MvxSource = global::MvvnCross.Plugins.Validation.Demo.Droid.Resource.Styleable.MvxImageView_MvxSource;
-			global::MvvmCross.Plugins.Validation.Droid.Resource.Styleable.MvxListView = global::MvvnCross.Plugins.Validation.Demo.Droid.Resource.Styleable.MvxListView;
-			global::MvvmCross.Plugins.Validation.Droid.Resource.Styleable.MvxListView_MvxDropDownItemTemplate = global::MvvnCross.Plugins.Validation.Demo.Droid.Resource.Styleable.MvxListView_MvxDropDownItemTemplate;
-			global::MvvmCross.Plugins.Validation.Droid.Resource.Styleable.MvxListView_MvxItemTemplate = global::MvvnCross.Plugins.Validation.Demo.Droid.Resource.Styleable.MvxListView_MvxItemTemplate;
+			global::MvvmCross.Binding.Droid.Resource.Attribute.MvxBind = global::MvvmCross.Plugins.Validation.Demo.Droid.Resource.Attribute.MvxBind;
+			global::MvvmCross.Binding.Droid.Resource.Attribute.MvxDropDownItemTemplate = global::MvvmCross.Plugins.Validation.Demo.Droid.Resource.Attribute.MvxDropDownItemTemplate;
+			global::MvvmCross.Binding.Droid.Resource.Attribute.MvxGroupItemTemplate = global::MvvmCross.Plugins.Validation.Demo.Droid.Resource.Attribute.MvxGroupItemTemplate;
+			global::MvvmCross.Binding.Droid.Resource.Attribute.MvxItemTemplate = global::MvvmCross.Plugins.Validation.Demo.Droid.Resource.Attribute.MvxItemTemplate;
+			global::MvvmCross.Binding.Droid.Resource.Attribute.MvxLang = global::MvvmCross.Plugins.Validation.Demo.Droid.Resource.Attribute.MvxLang;
+			global::MvvmCross.Binding.Droid.Resource.Attribute.MvxSource = global::MvvmCross.Plugins.Validation.Demo.Droid.Resource.Attribute.MvxSource;
+			global::MvvmCross.Binding.Droid.Resource.Attribute.MvxTemplate = global::MvvmCross.Plugins.Validation.Demo.Droid.Resource.Attribute.MvxTemplate;
+			global::MvvmCross.Binding.Droid.Resource.Id.MvvmCrossTagId = global::MvvmCross.Plugins.Validation.Demo.Droid.Resource.Id.MvvmCrossTagId;
+			global::MvvmCross.Binding.Droid.Resource.Id.MvxBindingTagUnique = global::MvvmCross.Plugins.Validation.Demo.Droid.Resource.Id.MvxBindingTagUnique;
+			global::MvvmCross.Binding.Droid.Resource.Styleable.MvxBinding = global::MvvmCross.Plugins.Validation.Demo.Droid.Resource.Styleable.MvxBinding;
+			global::MvvmCross.Binding.Droid.Resource.Styleable.MvxBinding_MvxBind = global::MvvmCross.Plugins.Validation.Demo.Droid.Resource.Styleable.MvxBinding_MvxBind;
+			global::MvvmCross.Binding.Droid.Resource.Styleable.MvxBinding_MvxLang = global::MvvmCross.Plugins.Validation.Demo.Droid.Resource.Styleable.MvxBinding_MvxLang;
+			global::MvvmCross.Binding.Droid.Resource.Styleable.MvxControl = global::MvvmCross.Plugins.Validation.Demo.Droid.Resource.Styleable.MvxControl;
+			global::MvvmCross.Binding.Droid.Resource.Styleable.MvxControl_MvxTemplate = global::MvvmCross.Plugins.Validation.Demo.Droid.Resource.Styleable.MvxControl_MvxTemplate;
+			global::MvvmCross.Binding.Droid.Resource.Styleable.MvxExpandableListView = global::MvvmCross.Plugins.Validation.Demo.Droid.Resource.Styleable.MvxExpandableListView;
+			global::MvvmCross.Binding.Droid.Resource.Styleable.MvxExpandableListView_MvxGroupItemTemplate = global::MvvmCross.Plugins.Validation.Demo.Droid.Resource.Styleable.MvxExpandableListView_MvxGroupItemTemplate;
+			global::MvvmCross.Binding.Droid.Resource.Styleable.MvxImageView = global::MvvmCross.Plugins.Validation.Demo.Droid.Resource.Styleable.MvxImageView;
+			global::MvvmCross.Binding.Droid.Resource.Styleable.MvxImageView_MvxSource = global::MvvmCross.Plugins.Validation.Demo.Droid.Resource.Styleable.MvxImageView_MvxSource;
+			global::MvvmCross.Binding.Droid.Resource.Styleable.MvxListView = global::MvvmCross.Plugins.Validation.Demo.Droid.Resource.Styleable.MvxListView;
+			global::MvvmCross.Binding.Droid.Resource.Styleable.MvxListView_MvxDropDownItemTemplate = global::MvvmCross.Plugins.Validation.Demo.Droid.Resource.Styleable.MvxListView_MvxDropDownItemTemplate;
+			global::MvvmCross.Binding.Droid.Resource.Styleable.MvxListView_MvxItemTemplate = global::MvvmCross.Plugins.Validation.Demo.Droid.Resource.Styleable.MvxListView_MvxItemTemplate;
+			global::MvvmCross.Plugins.Validation.Droid.Resource.Attribute.MvxBind = global::MvvmCross.Plugins.Validation.Demo.Droid.Resource.Attribute.MvxBind;
+			global::MvvmCross.Plugins.Validation.Droid.Resource.Attribute.MvxDropDownItemTemplate = global::MvvmCross.Plugins.Validation.Demo.Droid.Resource.Attribute.MvxDropDownItemTemplate;
+			global::MvvmCross.Plugins.Validation.Droid.Resource.Attribute.MvxGroupItemTemplate = global::MvvmCross.Plugins.Validation.Demo.Droid.Resource.Attribute.MvxGroupItemTemplate;
+			global::MvvmCross.Plugins.Validation.Droid.Resource.Attribute.MvxItemTemplate = global::MvvmCross.Plugins.Validation.Demo.Droid.Resource.Attribute.MvxItemTemplate;
+			global::MvvmCross.Plugins.Validation.Droid.Resource.Attribute.MvxLang = global::MvvmCross.Plugins.Validation.Demo.Droid.Resource.Attribute.MvxLang;
+			global::MvvmCross.Plugins.Validation.Droid.Resource.Attribute.MvxSource = global::MvvmCross.Plugins.Validation.Demo.Droid.Resource.Attribute.MvxSource;
+			global::MvvmCross.Plugins.Validation.Droid.Resource.Attribute.MvxTemplate = global::MvvmCross.Plugins.Validation.Demo.Droid.Resource.Attribute.MvxTemplate;
+			global::MvvmCross.Plugins.Validation.Droid.Resource.Id.MvvmCrossTagId = global::MvvmCross.Plugins.Validation.Demo.Droid.Resource.Id.MvvmCrossTagId;
+			global::MvvmCross.Plugins.Validation.Droid.Resource.Id.MvxBindingTagUnique = global::MvvmCross.Plugins.Validation.Demo.Droid.Resource.Id.MvxBindingTagUnique;
+			global::MvvmCross.Plugins.Validation.Droid.Resource.String.ApplicationName = global::MvvmCross.Plugins.Validation.Demo.Droid.Resource.String.ApplicationName;
+			global::MvvmCross.Plugins.Validation.Droid.Resource.String.Hello = global::MvvmCross.Plugins.Validation.Demo.Droid.Resource.String.Hello;
+			global::MvvmCross.Plugins.Validation.Droid.Resource.Styleable.MvxBinding = global::MvvmCross.Plugins.Validation.Demo.Droid.Resource.Styleable.MvxBinding;
+			global::MvvmCross.Plugins.Validation.Droid.Resource.Styleable.MvxBinding_MvxBind = global::MvvmCross.Plugins.Validation.Demo.Droid.Resource.Styleable.MvxBinding_MvxBind;
+			global::MvvmCross.Plugins.Validation.Droid.Resource.Styleable.MvxBinding_MvxLang = global::MvvmCross.Plugins.Validation.Demo.Droid.Resource.Styleable.MvxBinding_MvxLang;
+			global::MvvmCross.Plugins.Validation.Droid.Resource.Styleable.MvxControl = global::MvvmCross.Plugins.Validation.Demo.Droid.Resource.Styleable.MvxControl;
+			global::MvvmCross.Plugins.Validation.Droid.Resource.Styleable.MvxControl_MvxTemplate = global::MvvmCross.Plugins.Validation.Demo.Droid.Resource.Styleable.MvxControl_MvxTemplate;
+			global::MvvmCross.Plugins.Validation.Droid.Resource.Styleable.MvxExpandableListView = global::MvvmCross.Plugins.Validation.Demo.Droid.Resource.Styleable.MvxExpandableListView;
+			global::MvvmCross.Plugins.Validation.Droid.Resource.Styleable.MvxExpandableListView_MvxGroupItemTemplate = global::MvvmCross.Plugins.Validation.Demo.Droid.Resource.Styleable.MvxExpandableListView_MvxGroupItemTemplate;
+			global::MvvmCross.Plugins.Validation.Droid.Resource.Styleable.MvxImageView = global::MvvmCross.Plugins.Validation.Demo.Droid.Resource.Styleable.MvxImageView;
+			global::MvvmCross.Plugins.Validation.Droid.Resource.Styleable.MvxImageView_MvxSource = global::MvvmCross.Plugins.Validation.Demo.Droid.Resource.Styleable.MvxImageView_MvxSource;
+			global::MvvmCross.Plugins.Validation.Droid.Resource.Styleable.MvxListView = global::MvvmCross.Plugins.Validation.Demo.Droid.Resource.Styleable.MvxListView;
+			global::MvvmCross.Plugins.Validation.Droid.Resource.Styleable.MvxListView_MvxDropDownItemTemplate = global::MvvmCross.Plugins.Validation.Demo.Droid.Resource.Styleable.MvxListView_MvxDropDownItemTemplate;
+			global::MvvmCross.Plugins.Validation.Droid.Resource.Styleable.MvxListView_MvxItemTemplate = global::MvvmCross.Plugins.Validation.Demo.Droid.Resource.Styleable.MvxListView_MvxItemTemplate;
 		}
 		
 		public partial class Attribute
@@ -134,9 +134,6 @@ namespace MvvnCross.Plugins.Validation.Demo.Droid
 			// aapt resource value: 0x7f050001
 			public const int MvxBindingTagUnique = 2131034113;
 			
-			// aapt resource value: 0x7f050002
-			public const int MyButton = 2131034114;
-			
 			static Id()
 			{
 				global::Android.Runtime.ResourceIdManager.UpdateIdValues();
@@ -154,10 +151,7 @@ namespace MvvnCross.Plugins.Validation.Demo.Droid
 			public const int FirstView = 2130903040;
 			
 			// aapt resource value: 0x7f030001
-			public const int Main = 2130903041;
-			
-			// aapt resource value: 0x7f030002
-			public const int SplashScreen = 2130903042;
+			public const int SplashScreen = 2130903041;
 			
 			static Layout()
 			{

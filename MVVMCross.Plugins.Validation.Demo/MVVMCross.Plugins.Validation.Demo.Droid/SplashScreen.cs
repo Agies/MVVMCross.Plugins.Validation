@@ -1,7 +1,6 @@
 using Android.App;
 using Android.Content.PM;
 using MvvmCross.Droid.Views;
-using MvvnCross.Plugins.Validation.Demo.Droid;
 
 namespace MvvmCross.Plugins.Validation.Demo.Droid
 {

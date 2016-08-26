@@ -1,6 +1,6 @@
 using MvvmCross.Platform.Plugins;
 
-namespace MvvnCross.Plugins.Validation.Demo.Droid.Bootstrap
+namespace MvvmCross.Plugins.Validation.Demo.Droid.Bootstrap
 {
     public class ValidationPluginBootstrap
         : MvxPluginBootstrapAction<MvvmCross.Plugins.Validation.PluginLoader>
