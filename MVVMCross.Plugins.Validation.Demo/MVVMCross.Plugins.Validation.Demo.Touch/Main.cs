@@ -1,6 +1,6 @@
 ﻿using UIKit;
 
-namespace MVVMCross.Plugins.Validation.Demo.Touch
+namespace MvvmCross.Plugins.Validation.Demo.Touch
 {
     public class Application
     {

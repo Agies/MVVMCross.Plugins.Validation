@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("MVVMCross.Plugins.Validation.Demo.Touch")]
+[assembly: AssemblyTitle("MvvmCross.Plugins.Validation.Demo.Touch")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("MVVMCross.Plugins.Validation.Demo.Touch")]
+[assembly: AssemblyProduct("MvvmCross.Plugins.Validation.Demo.Touch")]
 [assembly: AssemblyCopyright("Copyright ©  2016")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]

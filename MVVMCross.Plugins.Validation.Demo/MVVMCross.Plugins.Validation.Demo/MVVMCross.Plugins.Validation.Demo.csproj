@@ -8,8 +8,8 @@
     <ProjectGuid>{41CED16F-66C1-42F8-8858-4C76F3AE169E}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>MVVMCross.Plugins.Validation.Demo</RootNamespace>
-    <AssemblyName>MVVMCross.Plugins.Validation.Demo</AssemblyName>
+    <RootNamespace>MvvmCross.Plugins.Validation.Demo</RootNamespace>
+    <AssemblyName>MvvmCross.Plugins.Validation.Demo</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <TargetFrameworkProfile>Profile7</TargetFrameworkProfile>
     <FileAlignment>512</FileAlignment>
@@ -67,12 +67,12 @@
       <HintPath>..\packages\MvvmCross.Plugin.Messenger.4.0.0\lib\portable-net45+win+wpa81+wp80\MvvmCross.Plugins.Messenger.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="MVVMCross.Plugins.Validation, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\MVVMCross.Plugins.Validation.2.0.0\lib\portable-win+net45+sl50+wp8+MonoAndroid+MonoTouch\MVVMCross.Plugins.Validation.dll</HintPath>
+    <Reference Include="MvvmCross.Plugins.Validation, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\MvvmCross.Plugins.Validation.2.1.1\lib\portable-win+net45+sl50+wp8+MonoAndroid+MonoTouch\MvvmCross.Plugins.Validation.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="MVVMCross.Plugins.Validation.ForFieldBinding, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\MVVMCross.Plugins.Validation.ForFieldBinding.2.0.0\lib\portable-win+net45+sl50+wp8+MonoAndroid+MonoTouch\MVVMCross.Plugins.Validation.ForFieldBinding.dll</HintPath>
+    <Reference Include="MvvmCross.Plugins.Validation.ForFieldBinding, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\MvvmCross.Plugins.Validation.ForFieldBinding.2.1.1\lib\portable-win+net45+sl50+wp8+MonoAndroid+MonoTouch\MvvmCross.Plugins.Validation.ForFieldBinding.dll</HintPath>
       <Private>True</Private>
     </Reference>
   </ItemGroup>

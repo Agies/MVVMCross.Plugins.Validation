@@ -1,11 +1,12 @@
 using Android.App;
 using Android.Content.PM;
 using MvvmCross.Droid.Views;
+using MvvnCross.Plugins.Validation.Demo.Droid;
 
-namespace MVVMCross.Plugins.Validation.Demo.Droid
+namespace MvvmCross.Plugins.Validation.Demo.Droid
 {
     [Activity(
-        Label = "MVVMCross.Plugins.Validation.Demo.Droid"
+        Label = "MvvmCross.Plugins.Validation.Demo.Droid"
         , MainLauncher = true
         , Icon = "@drawable/icon"
         , Theme = "@style/Theme.Splash"

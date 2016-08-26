@@ -3,11 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.25123.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MVVMCross.Plugins.Validation.Demo", "MVVMCross.Plugins.Validation.Demo\MVVMCross.Plugins.Validation.Demo.csproj", "{41CED16F-66C1-42F8-8858-4C76F3AE169E}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MvvmCross.Plugins.Validation.Demo", "MvvmCross.Plugins.Validation.Demo\MvvmCross.Plugins.Validation.Demo.csproj", "{41CED16F-66C1-42F8-8858-4C76F3AE169E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MVVMCross.Plugins.Validation.Demo.Touch", "MVVMCross.Plugins.Validation.Demo.Touch\MVVMCross.Plugins.Validation.Demo.Touch.csproj", "{2527AB91-1204-4094-8EA9-D9606DEADACC}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MvvmCross.Plugins.Validation.Demo.Touch", "MvvmCross.Plugins.Validation.Demo.Touch\MvvmCross.Plugins.Validation.Demo.Touch.csproj", "{2527AB91-1204-4094-8EA9-D9606DEADACC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MVVMCross.Plugins.Validation.Demo.Droid", "MVVMCross.Plugins.Validation.Demo.Droid\MVVMCross.Plugins.Validation.Demo.Droid.csproj", "{CFF4A2DE-6736-4A0F-89D9-2450068F2E4D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MvvmCross.Plugins.Validation.Demo.Droid", "MvvmCross.Plugins.Validation.Demo.Droid\MvvmCross.Plugins.Validation.Demo.Droid.csproj", "{CFF4A2DE-6736-4A0F-89D9-2450068F2E4D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

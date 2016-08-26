@@ -6,9 +6,9 @@
     <ProjectGuid>{2527AB91-1204-4094-8EA9-D9606DEADACC}</ProjectGuid>
     <ProjectTypeGuids>{FEACFBD2-3405-455C-9665-78FE426C6842};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <OutputType>Exe</OutputType>
-    <RootNamespace>MVVMCross.Plugins.Validation.Demo.Touch</RootNamespace>
+    <RootNamespace>MvvmCross.Plugins.Validation.Demo.Touch</RootNamespace>
     <IPhoneResourcePrefix>Resources</IPhoneResourcePrefix>
-    <AssemblyName>MVVMCrossPluginsValidationDemoTouch</AssemblyName>
+    <AssemblyName>MvvmCrossPluginsValidationDemoTouch</AssemblyName>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhoneSimulator' ">
     <DebugSymbols>true</DebugSymbols>
@@ -100,7 +100,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <InterfaceDefinition Include="Resources\LaunchScreen.xib" />
     <Content Include="Entitlements.plist" />
-    <None Include="packages.config" />
+    <None Include="packages.config">
+      <SubType>Designer</SubType>
+    </None>
     <InterfaceDefinition Include="Views\FirstView.xib" />
   </ItemGroup>
   <ItemGroup>
@@ -144,16 +146,16 @@
       <HintPath>..\packages\MvvmCross.Plugin.Messenger.4.0.0\lib\Xamarin.iOS10\MvvmCross.Plugins.Messenger.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="MVVMCross.Plugins.Validation, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\MVVMCross.Plugins.Validation.2.0.0\lib\Xamarin.iOS10\MVVMCross.Plugins.Validation.dll</HintPath>
+    <Reference Include="MvvmCross.Plugins.Validation, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\MvvmCross.Plugins.Validation.2.1.1\lib\Xamarin.iOS10\MvvmCross.Plugins.Validation.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="MVVMCross.Plugins.Validation.ForFieldBinding, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\MVVMCross.Plugins.Validation.ForFieldBinding.2.0.0\lib\portable-win+net45+sl50+wp8+MonoAndroid+MonoTouch\MVVMCross.Plugins.Validation.ForFieldBinding.dll</HintPath>
+    <Reference Include="MvvmCross.Plugins.Validation.ForFieldBinding, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\MvvmCross.Plugins.Validation.ForFieldBinding.2.1.1\lib\portable-win+net45+sl50+wp8+MonoAndroid+MonoTouch\MvvmCross.Plugins.Validation.ForFieldBinding.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="MVVMCross.Plugins.Validation.Touch, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\MVVMCross.Plugins.Validation.2.0.0\lib\Xamarin.iOS10\MVVMCross.Plugins.Validation.Touch.dll</HintPath>
+    <Reference Include="MvvmCross.Plugins.Validation.Touch, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\MvvmCross.Plugins.Validation.2.1.1\lib\Xamarin.iOS10\MvvmCross.Plugins.Validation.Touch.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="System" />
@@ -162,9 +164,9 @@
     <Reference Include="Xamarin.iOS" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\MVVMCross.Plugins.Validation.Demo\MVVMCross.Plugins.Validation.Demo.csproj">
+    <ProjectReference Include="..\MvvmCross.Plugins.Validation.Demo\MvvmCross.Plugins.Validation.Demo.csproj">
       <Project>{41CED16F-66C1-42F8-8858-4C76F3AE169E}</Project>
-      <Name>MVVMCross.Plugins.Validation.Demo</Name>
+      <Name>MvvmCross.Plugins.Validation.Demo</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />

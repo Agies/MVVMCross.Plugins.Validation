@@ -4,7 +4,7 @@ using Android.App;
 using Android.Views;
 using Android.Widget;
 
-namespace MVVMCross.Plugins.Validation.Demo.Droid
+namespace MvvmCross.Plugins.Validation.Demo.Droid
 {
     // This class is never actually executed, but when Xamarin linking is enabled it does how to ensure types and properties
     // are preserved in the deployed app

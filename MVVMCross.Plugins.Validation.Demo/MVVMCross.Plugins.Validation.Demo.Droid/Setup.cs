@@ -3,9 +3,9 @@ using MvvmCross.Droid.Platform;
 using MvvmCross.Core.ViewModels;
 using MvvmCross.Platform.Platform;
 using MvvmCross.Platform;
-using MVVMCross.Plugins.Validation.Droid;
+using MvvmCross.Plugins.Validation.Droid;
 
-namespace MVVMCross.Plugins.Validation.Demo.Droid
+namespace MvvmCross.Plugins.Validation.Demo.Droid
 {
     public class Setup : MvxAndroidSetup
     {

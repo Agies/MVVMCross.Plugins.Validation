@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace MVVMCross.Plugins.Validation.Demo.Converters
+namespace MvvmCross.Plugins.Validation.Demo.Converters
 {
     public class AgeFormatValueConverter : MvxValueConverter<int, string>
     {
