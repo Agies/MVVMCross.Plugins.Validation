@@ -17,6 +17,6 @@
         </dependencies>
     </metadata>
     <files>
-        <file src="..\bin\Release\Mvx\Portable\MvvmCross.Plugins.Validation.ForFieldBinding.dll" target="lib\portable-net45+netcore45+wpa81\MvvmCross.Plugins.Validation.ForFieldBinding.dll" />
+        <file src="../bin/Release/Mvx/Portable/MvvmCross.Plugins.Validation.ForFieldBinding.dll" target="lib/portable-net45+netcore45+wpa81/MvvmCross.Plugins.Validation.ForFieldBinding.dll" />
     </files>
 </package>

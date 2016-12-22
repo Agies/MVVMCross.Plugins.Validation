@@ -4,7 +4,7 @@
         <id>MvvmCross.Plugins.Validation</id>
         <version>2.1.2</version>
         <title>MvvmCross - Validation Plugin</title>
-        <authors>Agies, ZhangZihe</authors>
+        <authors>Agies, ZhangZihe, yozzozo</authors>
         <owners>Jerel R Hass</owners>
         <licenseUrl>http://opensource.org/licenses/ms-pl.html</licenseUrl>
         <projectUrl>https://github.com/Agies/MvvmCross.Plugins.Validation</projectUrl>
