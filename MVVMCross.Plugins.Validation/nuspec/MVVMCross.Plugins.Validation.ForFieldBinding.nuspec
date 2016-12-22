@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
     <metadata>
         <id>MvvmCross.Plugins.Validation.ForFieldBinding</id>
-        <version>2.1.1</version>
+        <version>2.1.2</version>
         <title>MvvmCross - Validation Plugin - ForFieldBinding</title>
         <authors>Agies, ZhangZihe</authors>
         <owners>Jerel R Hass</owners>
@@ -17,6 +17,6 @@
         </dependencies>
     </metadata>
     <files>
-        <file src="..\bin\Release\Mvx\Portable\MvvmCross.Plugins.Validation.ForFieldBinding.dll" target="lib\portable-win+net45+sl50+wp8+MonoAndroid+MonoTouch\MvvmCross.Plugins.Validation.ForFieldBinding.dll" />
+        <file src="..\bin\Release\Mvx\Portable\MvvmCross.Plugins.Validation.ForFieldBinding.dll" target="lib\portable-net45+netcore45+wpa81\MvvmCross.Plugins.Validation.ForFieldBinding.dll" />
     </files>
 </package>
