@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Linq.Expressions;
+using MvvmCross.Plugin.FieldBinding;
 
 namespace MvvmCross.Plugin.Validation.ForFieldBinding.Validators
 {
@@ -12,8 +13,8 @@ namespace MvvmCross.Plugin.Validation.ForFieldBinding.Validators
 
         public override IValidation CreateValidation(Type valueType)
         {
-            if (!valueType.FullName.Contains("MvvmCross.FieldBinding"))
-                throw new NotSupportedException("NCFieldRequired Validator for type " + valueType.Name + " is not supported.");
+            if (!valueType.FullName.Contains("MvvmCross.Plugin.FieldBinding"))
+                throw new NotSupportedException("NCFieldRequired Validator for type " + valueType.FullName + " is not supported.");
 
             var genericityType = valueType.GenericTypeArguments[0];
             if (genericityType == null || genericityType == typeof(string))

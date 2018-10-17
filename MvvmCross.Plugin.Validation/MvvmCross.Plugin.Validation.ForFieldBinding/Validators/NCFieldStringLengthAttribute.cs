@@ -18,7 +18,7 @@ namespace MvvmCross.Plugin.Validation.ForFieldBinding.Validators
 
         public override IValidation CreateValidation(Type valueType)
         {
-            if (!valueType.FullName.Contains("MvvmCross.FieldBinding"))
+            if (!valueType.FullName.Contains("MvvmCross.Plugin.FieldBinding"))
                 throw new NotSupportedException("NCFieldStringLength Validator for type " + valueType.Name + " is not supported.");
 
             return new NCFieldStringLengthValidation(str =>

@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using MvvmCross.Base;
 using MvvmCross.Plugin.FieldBinding;
 using MvvmCross.Plugin.Validation.ForFieldBinding.Validators;
 using MvvmCross.Tests;

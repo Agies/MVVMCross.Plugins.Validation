@@ -4,7 +4,7 @@ using System.ComponentModel;
 
 namespace MvvmCross.Plugin.Validation
 {
-    public interface IValidationCollection : ICollection<IValidationInfo>, INotifyCollectionChanged, INotifyPropertyChanged
+    public interface IValidationCollection : ICollection<IValidationInfo>
     {
     }
 }

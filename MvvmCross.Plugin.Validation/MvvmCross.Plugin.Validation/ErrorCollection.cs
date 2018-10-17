@@ -1,12 +1,12 @@
 ﻿using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.Linq;
-using MvvmCross.ViewModels;
 
 namespace MvvmCross.Plugin.Validation
 {
-    public class ErrorCollection : MvxObservableCollection<IErrorInfo>, IErrorCollection
+    public class ErrorCollection : Collection<IErrorInfo>, IErrorCollection
     {
-        public ErrorCollection(IEnumerable<IErrorInfo> result) : base(result)
+        public ErrorCollection(IList<IErrorInfo> result) : base(result)
         {
             
         }

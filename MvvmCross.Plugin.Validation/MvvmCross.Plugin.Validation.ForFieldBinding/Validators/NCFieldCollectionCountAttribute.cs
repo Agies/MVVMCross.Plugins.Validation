@@ -27,7 +27,7 @@ namespace MvvmCross.Plugin.Validation.ForFieldBinding.Validators
 
         public override IValidation CreateValidation(Type valueType)
         {
-            if (!valueType.FullName.Contains("MvvmCross.FieldBinding"))
+            if (!valueType.FullName.Contains("MvvmCross.Plugin.FieldBinding"))
                 throw new NotSupportedException("NCFieldCollectionCountAtribute Validator for type " + valueType.Name + " is not supported.");
 
             return new NCFieldCollectionCountValidation(num => num >= int.Parse(Minimum.ToString()) && num <= int.Parse(Maximum.ToString()),
