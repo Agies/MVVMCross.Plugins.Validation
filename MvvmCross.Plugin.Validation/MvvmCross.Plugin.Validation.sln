@@ -1,0 +1,61 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28010.2036
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MvvmCross.Plugin.Validation", "MvvmCross.Plugin.Validation\MvvmCross.Plugin.Validation.csproj", "{28F5F62B-17A7-4AC9-9079-4C9EFB898E83}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{06857898-906E-4F67-B987-4B7D7996ED1D}"
+	ProjectSection(SolutionItems) = preProject
+		.nuget\NuGet.Config = .nuget\NuGet.Config
+		.nuget\NuGet.exe = .nuget\NuGet.exe
+		.nuget\NuGet.targets = .nuget\NuGet.targets
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MvvmCross.Plugin.Validation.Ios", "MvvmCross.Plugin.Validation.Ios\MvvmCross.Plugin.Validation.Ios.csproj", "{7E7F730A-0994-4475-91AD-6F85EFBFD721}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "nuspec", "nuspec", "{43B0FD01-0637-4949-AA21-8E35516D0160}"
+	ProjectSection(SolutionItems) = preProject
+		nuspec\MvvmCross.Plugin.Validation.1.0.0.nuspec = nuspec\MvvmCross.Plugin.Validation.1.0.0.nuspec
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MvvmCross.Plugin.Validation.ForFieldBinding", "MvvmCross.Plugin.Validation.ForFieldBinding\MvvmCross.Plugin.Validation.ForFieldBinding.csproj", "{2FFE26FF-F5ED-4F97-9DE5-26D952D0A703}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MvvmCross.Plugin.Validation.Android", "MvvmCross.Plugin.Validation.Android\MvvmCross.Plugin.Validation.Android.csproj", "{ED743E8F-9647-4741-9467-F0F09E539BC3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MvvmCross.Plugin.Validation.Tests", "MvvmCross.Plugin.Validation.Tests\MvvmCross.Plugin.Validation.Tests.csproj", "{1C2B300F-250A-49AA-A218-995C074B6997}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{28F5F62B-17A7-4AC9-9079-4C9EFB898E83}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{28F5F62B-17A7-4AC9-9079-4C9EFB898E83}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{28F5F62B-17A7-4AC9-9079-4C9EFB898E83}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{28F5F62B-17A7-4AC9-9079-4C9EFB898E83}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7E7F730A-0994-4475-91AD-6F85EFBFD721}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7E7F730A-0994-4475-91AD-6F85EFBFD721}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7E7F730A-0994-4475-91AD-6F85EFBFD721}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7E7F730A-0994-4475-91AD-6F85EFBFD721}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2FFE26FF-F5ED-4F97-9DE5-26D952D0A703}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2FFE26FF-F5ED-4F97-9DE5-26D952D0A703}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2FFE26FF-F5ED-4F97-9DE5-26D952D0A703}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2FFE26FF-F5ED-4F97-9DE5-26D952D0A703}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ED743E8F-9647-4741-9467-F0F09E539BC3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ED743E8F-9647-4741-9467-F0F09E539BC3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ED743E8F-9647-4741-9467-F0F09E539BC3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ED743E8F-9647-4741-9467-F0F09E539BC3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1C2B300F-250A-49AA-A218-995C074B6997}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1C2B300F-250A-49AA-A218-995C074B6997}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1C2B300F-250A-49AA-A218-995C074B6997}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1C2B300F-250A-49AA-A218-995C074B6997}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {63318F3D-EEF6-43BB-991F-AAE74C691EF6}
+	EndGlobalSection
+EndGlobal

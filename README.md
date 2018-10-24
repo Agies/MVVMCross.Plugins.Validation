@@ -2,7 +2,7 @@ Validation Plug-in for MvvmCross
 --------------------------------
 The usage is simple:
 ```
-var errors = Mvx.Resolve<IValidator>().Validate(YourViewModelObj);
+var errors = Mvx.IocProvider.Resolve<IValidator>().Validate(YourViewModelObj);
 if (!errors.IsValid)
 {
        //TODO: You can display the errors there.
@@ -11,7 +11,7 @@ if (!errors.IsValid)
 ```
 Of course, you must do RegistType in 'APP.cs':
 ```
-public class App : MvvmCross.Core.ViewModels.MvxApplication
+public class App : MvvmCross.ViewModels.MvxApplication
 {
     public override void Initialize()
     {
@@ -20,7 +20,7 @@ public class App : MvvmCross.Core.ViewModels.MvxApplication
             .AsInterfaces()
             .RegisterAsLazySingleton();
             
-        Mvx.RegisterType<IValidator, Validator>();  //Regist IValidator
+        Mvx.IoCProvider.RegisterType<IValidator, Validator>();  //Regist IValidator
         
         RegisterAppStart<ViewModels.FirstViewModel>();
     }
@@ -29,6 +29,7 @@ public class App : MvvmCross.Core.ViewModels.MvxApplication
 Read about more usage here http://agiescode.ghost.io/2014/05/10/mobile-project-one/
 
 
+- 2018/10/17 Converted to .Net Standard 2.0 and namespaces adjusted to MvvmCross 6+
 - 2015/5/12 Added iOS and Android Support
 - 2015/5/13 Nuget support https://www.nuget.org/packages/MvvmCross.Plugins.Validation/
 - 2016/4/09 Added FieldBinding Support
